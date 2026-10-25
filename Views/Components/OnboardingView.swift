@@ -80,7 +80,12 @@ struct OnboardingView: View {
 
                 Button {
                     HapticFeedback.selection()
-                    withAnimation { page = min(page + 1, 2) }
+                    if page >= 2 {
+                        // Last page: the CTA completes onboarding
+                        withAnimation { completeOnboarding() }
+                    } else {
+                        withAnimation { page += 1 }
+                    }
                 } label: {
                     HStack(spacing: 6) {
                         Text("Tiếp tục")

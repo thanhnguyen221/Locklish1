@@ -140,7 +140,7 @@
 		159CB87E4F9FDB6C5F411FE6 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 		1979A2264833FF107FE7C1FC /* ScreenTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeService.swift; sourceTree = "<group>"; };
 		1CC0EED2E8583CE016874670 /* PracticeHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeHubView.swift; sourceTree = "<group>"; };
-		1D534C39C2B9D57A25E98630 /* Locklish.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Locklish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D534C39C2B9D57A25E98630 /* Locklish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Locklish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E819ED909D481EC56D1CA53 /* YouTubeStudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeStudyView.swift; sourceTree = "<group>"; };
 		1FDBEFA080A653965A8BEC93 /* DeckStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckStatsView.swift; sourceTree = "<group>"; };
 		200A863BD5EC0C0750046E29 /* VocabularyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyListView.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		2B01F212A17239A64454F578 /* YouTubeSubtitleTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeSubtitleTrack.swift; sourceTree = "<group>"; };
 		2B9A7622BC5D432357312D4D /* WidgetDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataStore.swift; sourceTree = "<group>"; };
 		2D52AD74533C77C75FC2FD32 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		2F3CBF2C97CF51041CC52173 /* LocklishWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = LocklishWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F3CBF2C97CF51041CC52173 /* LocklishWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LocklishWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3148DB25DB74DE98FEEAE70C /* FlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewModel.swift; sourceTree = "<group>"; };
 		39BC4DE661552E118565B650 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		3BA9268C35148896BAB84CFF /* EmptyStatePlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStatePlaceholderView.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		4D4F5863A610AEE9B6E535D3 /* SpeakPracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakPracticeViewModel.swift; sourceTree = "<group>"; };
 		4DF9C0D3D3452830BD4E0F73 /* NewsFullTextService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFullTextService.swift; sourceTree = "<group>"; };
 		5258182EE027A0EF9C41DB26 /* GrammarHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarHubView.swift; sourceTree = "<group>"; };
-		543C5C97F809C5F302B828F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		543C5C97F809C5F302B828F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5AAAB5A649CD44402196DE5A /* LocalVocabularyExtractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalVocabularyExtractorService.swift; sourceTree = "<group>"; };
 		605FC70148838F6433DF7190 /* IPATableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPATableView.swift; sourceTree = "<group>"; };
 		6563749713A7F5540281499E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -789,6 +789,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "LocklishWidget-Personal.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37ZZ7653Z3;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				ENTITLEMENTS_REQUIRED = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -817,6 +818,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37ZZ7653Z3;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				ENTITLEMENTS_REQUIRED = YES;
@@ -845,6 +847,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37ZZ7653Z3;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				ENTITLEMENTS_REQUIRED = YES;
@@ -869,6 +872,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = LocklishWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37ZZ7653Z3;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				ENTITLEMENTS_REQUIRED = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -956,6 +960,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = LocklishWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37ZZ7653Z3;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				ENTITLEMENTS_REQUIRED = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -984,6 +989,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37ZZ7653Z3;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				ENTITLEMENTS_REQUIRED = YES;
