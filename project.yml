@@ -102,6 +102,9 @@ targets:
         ENTITLEMENTS_REQUIRED: YES
         SKIP_INSTALL: YES
         ENABLE_USER_SCRIPT_SANDBOXING: YES
+      configs:
+        Personal:
+          CODE_SIGN_ENTITLEMENTS: LocklishWidget-Personal.entitlements
 
 schemes:
   Locklish:
