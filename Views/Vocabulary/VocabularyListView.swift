@@ -11,13 +11,20 @@ struct VocabularyListView: View {
     @State private var isAddWordPresented = false
     @State private var isCreateDeckPresented = false
     @State private var isImportPresented = false
+    @State private var isYouTubePresented = false
+    @State private var selectedDeck: VocabularyDeck? = nil
+    @State private var renameTarget: VocabularyDeck? = nil
+    @State private var renameText: String = ""
 
     var body: some View {
         NavigationStack {
             VStack(spacing: 0) {
                 if decks.isEmpty {
                     VStack(spacing: 20) {
-                        NavigationLink(destination: YouTubeStudyView()) {
+                        Button {
+                            HapticFeedback.light()
+                            isYouTubePresented = true
+                        } label: {
                             youtubeBannerCard
                         }
                         .buttonStyle(.plain)
@@ -52,30 +59,48 @@ struct VocabularyListView: View {
                             }
 
                             // YouTube Bilingual Subtitles Feature Card
+                            // (Button, not NavigationLink — no default chevron)
                             Section {
-                                NavigationLink(destination: YouTubeStudyView()) {
+                                Button {
+                                    HapticFeedback.light()
+                                    isYouTubePresented = true
+                                } label: {
                                     youtubeBannerCard
                                 }
+                                .buttonStyle(.plain)
                                 .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 6, trailing: 16))
                                 .listRowSeparator(.hidden)
                                 .listRowBackground(Color.clear)
                             }
 
-                            // Decks List
+                            // Decks List — buttons with a single internal affordance
                             Section {
                                 ForEach(visibleDecks) { deck in
-                                    NavigationLink(destination: DeckDetailView(deck: deck)) {
+                                    Button {
+                                        HapticFeedback.selection()
+                                        selectedDeck = deck
+                                    } label: {
                                         deckCard(for: deck)
                                     }
+                                    .buttonStyle(.plain)
                                     .listRowInsets(EdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16))
                                     .listRowSeparator(.hidden)
                                     .listRowBackground(Color.clear)
-                                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
                                         Button(role: .destructive) {
                                             viewModel.deleteDeck(deck, in: modelContext)
                                         } label: {
                                             Label("Xóa", systemImage: "trash")
                                         }
+
+                                        Button {
+                                            HapticFeedback.light()
+                                            renameTarget = deck
+                                            renameText = deck.name
+                                        } label: {
+                                            Label("Đổi tên", systemImage: "pencil")
+                                        }
+                                        .tint(AppTheme.primary)
                                     }
                                 }
                             }
@@ -88,6 +113,32 @@ struct VocabularyListView: View {
             .background(AppTheme.background.ignoresSafeArea(.all))
             .navigationTitle("Học phần")
             .searchable(text: $viewModel.searchText, prompt: "Tìm học phần...")
+            .navigationDestination(isPresented: $isYouTubePresented) {
+                YouTubeStudyView()
+            }
+            .navigationDestination(item: $selectedDeck) { deck in
+                DeckDetailView(deck: deck)
+            }
+            .alert("Đổi tên học phần", isPresented: Binding(
+                get: { renameTarget != nil },
+                set: { if !$0 { renameTarget = nil } }
+            )) {
+                TextField("Tên học phần", text: $renameText)
+                Button("Lưu") {
+                    if let deck = renameTarget {
+                        let trimmed = renameText.trimmingCharacters(in: .whitespacesAndNewlines)
+                        if !trimmed.isEmpty {
+                            deck.name = trimmed
+                            try? modelContext.save()
+                            HapticFeedback.success()
+                        }
+                    }
+                    renameTarget = nil
+                }
+                Button("Huỷ", role: .cancel) { renameTarget = nil }
+            } message: {
+                Text("Nhập tên mới cho học phần này.")
+            }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     HStack(spacing: 8) {

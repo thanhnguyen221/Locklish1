@@ -208,11 +208,18 @@ public final class GameCatalogService {
             }
         }
 
-        // 2. Scan Development directories on disk (Resources folder / Workspace root)
-        let devDirs = [
-            "/Users/thanhnguyen/Documents/Locklish/Resources",
-            "/Users/thanhnguyen/Documents/Locklish"
-        ]
+        // 2. Scan the app's Documents folder for side-loaded vocabulary JSON
+        // (developer convenience). No hardcoded machine paths — portable.
+        let devDirs: [String] = {
+            #if DEBUG
+            if let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.path {
+                return [docs]
+            }
+            return []
+            #else
+            return []
+            #endif
+        }()
         for dir in devDirs {
             if let files = try? FileManager.default.contentsOfDirectory(atPath: dir) {
                 for file in files where file.hasSuffix(".json") {
@@ -230,28 +237,8 @@ public final class GameCatalogService {
             }
         }
 
-        // 3. Fallback to specific known file paths if nothing loaded yet
-        if seedRoundsList.isEmpty {
-            let specificPaths = [
-                "/Users/thanhnguyen/Documents/Locklish/Resources/locklish_vocabulary_merged.json",
-                "/Users/thanhnguyen/Documents/Locklish/locklish_vocabulary_merged.json",
-                "/Users/thanhnguyen/Documents/Locklish/Resources/vocabulary1.json",
-                "/Users/thanhnguyen/Documents/Locklish/vocabulary1.json",
-                "/Users/thanhnguyen/Documents/Locklish/Resources/vocabulary.json",
-                "/Users/thanhnguyen/Documents/Locklish/vocabulary.json"
-            ]
-            for path in specificPaths {
-                if FileManager.default.fileExists(atPath: path),
-                   !processedURLs.contains(path),
-                   let fileData = try? Data(contentsOf: URL(fileURLWithPath: path)),
-                   let decoded = try? decoder.decode([VocabSeedRound].self, from: fileData) {
-                    processedURLs.insert(path)
-                    seedRoundsList.append(contentsOf: decoded)
-                    print("[GameCatalogService] 📁 Loaded \(decoded.count) rounds from fallback path: \(path)")
-                    break
-                }
-            }
-        }
+        // 3. No hardcoded absolute fallback paths — the bundle scan (step 1)
+        // covers all shipped JSON; anything else is developer-side only.
 
         guard !seedRoundsList.isEmpty else {
             print("[GameCatalogService] ❌ No vocabulary rounds found across any JSON files.")
