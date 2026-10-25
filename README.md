@@ -191,11 +191,9 @@ Locklish/
 │   ├── Vocabulary/  Practice/  YouTube/  News/  Grammar/  Settings/
 ├── Widget/ + Shared/          # Widget extension + shared snapshot
 ├── Resources/                 # grammar_data.json, news_sources.json, Assets, PrivacyInfo
-├── AppStoreScreenshots/       # 6 real screenshots (captured via XCUITest)
+├── AppStoreScreenshots/       # 13 real screenshots (captured via XCUITest)
 ├── project.yml                # XcodeGen project spec
-├── ROADMAP.md                 # P0–P4 plan with per-item status
-├── RELEASE.md                 # Release checklist (TestFlight, IAP, audit)
-└── CHANGELOG.md               # Detailed development log
+└── README.md
 ```
 
 ---

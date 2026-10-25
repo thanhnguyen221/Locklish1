@@ -24,3 +24,6 @@ Carthage/
 *.bak
 /tmp/
 grammar_data.json
+
+# Kế hoạch nội bộ (không commit lên GitHub)
+Planning/
