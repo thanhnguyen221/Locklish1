@@ -232,7 +232,7 @@ Copyright (c) 2026 Thanh Nguyen-Nhut. Tất cả quyền được bảo lưu —
 - **Role:** iOS Developer / AI Integration Specialist
 - **Responsibilities:** SwiftUI App Architecture, Gemini AI Integration, Speech Recognition & TTS, YouTube Caption Engine, Spaced Repetition System, Widget & iCloud Sync
 - **GitHub:** [@thanhnguyen221](https://github.com/thanhnguyen221)
-- **LinkedIn:** [Thanh Nguyen](https://linkedin.com/in/nhut-thanh-nguyen-6041343b2)
+- **LinkedIn:** [Thanh Nguyen](https://www.linkedin.com/in/nhut-thanh-nguyen-6041343b2/)
 - **Email:** thanhfff55@gmail.com
 
 ---
