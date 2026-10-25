@@ -69,6 +69,8 @@ targets:
           CODE_SIGN_ENTITLEMENTS: Locklish.entitlements
         Release:
           CODE_SIGN_ENTITLEMENTS: Locklish.entitlements
+        Personal:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: "DEBUG PERSONAL_BUILD"
 
   LocklishWidget:
     type: app-extension

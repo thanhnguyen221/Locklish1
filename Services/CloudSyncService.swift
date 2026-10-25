@@ -1,11 +1,17 @@
 import Foundation
+#if canImport(CloudKit)
 import CloudKit
+#endif
 import SwiftUI
 
 // MARK: - CloudSyncService
 /// Thin wrapper reporting the CloudKit account status for the sync indicator
 /// in Settings. The actual sync is driven by SwiftData's CloudKit integration
 /// (ModelContainer + iCloud entitlements) — nothing to orchestrate manually.
+///
+/// PERSONAL_BUILD: the free-account build has NO iCloud entitlements, and
+/// creating a CKContainer for an unentitled identifier traps at runtime —
+/// so CloudKit is never touched there and the card reports local-only mode.
 @Observable
 @MainActor
 final class CloudSyncService {
@@ -16,6 +22,7 @@ final class CloudSyncService {
         case signedOut        // device not signed into iCloud
         case restricted       // parental control / managed restriction
         case temporarilyUnavailable
+        case localOnly        // Personal build — no iCloud capability at all
         case unknown
     }
 
@@ -24,6 +31,9 @@ final class CloudSyncService {
     private init() {}
 
     func refreshStatus() async {
+        #if PERSONAL_BUILD
+        status = .localOnly
+        #else
         do {
             let account = try await CKContainer(identifier: "iCloud.com.locklish.app").accountStatus()
             switch account {
@@ -36,6 +46,7 @@ final class CloudSyncService {
         } catch {
             status = .unknown
         }
+        #endif
     }
 
     var statusTitle: String {
@@ -44,6 +55,7 @@ final class CloudSyncService {
         case .signedOut: return "Chưa đăng nhập iCloud"
         case .restricted: return "Tài khoản bị hạn chế"
         case .temporarilyUnavailable: return "iCloud tạm thời không khả dụng"
+        case .localOnly: return "Chế độ cá nhân — không đồng bộ"
         case .unknown: return "Đang kiểm tra iCloud…"
         }
     }
@@ -58,6 +70,8 @@ final class CloudSyncService {
             return "Tài khoản iCloud đang bị hạn chế. Liên hệ người quản lý để mở khóa đồng bộ."
         case .temporarilyUnavailable:
             return "Không kiểm tra được trạng thái iCloud. Dữ liệu vẫn lưu trên máy — thử lại sau."
+        case .localOnly:
+            return "Bản xây dựng cá nhân (miễn phí) không có iCloud. Dữ liệu lưu an toàn trên máy — đồng bộ sẽ bật khi dùng tài khoản Developer."
         case .unknown:
             return "Đang xác minh kết nối iCloud…"
         }
