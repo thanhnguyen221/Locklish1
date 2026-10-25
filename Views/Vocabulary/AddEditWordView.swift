@@ -238,7 +238,7 @@ struct AddEditWordView: View {
         imageData = item.imageData
         isMastered = item.isMastered
         // Find which deck this item belongs to
-        selectedDeck = existingDecks.first { $0.items.contains(where: { $0.id == item.id }) }
+        selectedDeck = existingDecks.first { ($0.items ?? []).contains(where: { $0.id == item.id }) }
         focusedField = .word
     }
 
@@ -270,7 +270,7 @@ struct AddEditWordView: View {
             )
             modelContext.insert(item)
             if let targetDeck = targetDeck {
-                targetDeck.items.append(item)
+                targetDeck.items = (targetDeck.items ?? []) + [item]
             }
         }
         try? modelContext.save()
@@ -295,12 +295,12 @@ struct AddEditWordView: View {
 
         // Manage deck relation if needed
         if let targetDeck = deck {
-            if !targetDeck.items.contains(where: { $0.id == item.id }) {
+            if !(targetDeck.items ?? []).contains(where: { $0.id == item.id }) {
                 // Remove from other decks
                 for d in existingDecks where d.id != targetDeck.id {
-                    d.items.removeAll(where: { $0.id == item.id })
+                    d.items?.removeAll(where: { $0.id == item.id })
                 }
-                targetDeck.items.append(item)
+                targetDeck.items = (targetDeck.items ?? []) + [item]
             }
         }
     }

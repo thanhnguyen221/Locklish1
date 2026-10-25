@@ -30,7 +30,7 @@ final class StoryViewModel {
 
     // MARK: - Load or Generate Story
     func loadStory(for deck: VocabularyDeck, forceRegenerate: Bool = false) async {
-        guard !deck.items.isEmpty else {
+        guard !(deck.items ?? []).isEmpty else {
             self.errorMessage = "Thư mục này chưa có từ vựng nào. Hãy thêm từ vựng trước khi tạo truyện!"
             return
         }
@@ -42,7 +42,7 @@ final class StoryViewModel {
             let result = try await StoryGeneratorService.shared.generateStory(
                 deckId: deck.id,
                 deckName: deck.name,
-                items: deck.items,
+                items: deck.items ?? [],
                 forceRegenerate: forceRegenerate
             )
             self.story = result

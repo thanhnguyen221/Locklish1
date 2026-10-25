@@ -173,7 +173,7 @@ struct VocabularyListView: View {
         var total = 0
         var mastered = 0
         var dueCount = 0
-        for item in deck.items {
+        for item in deck.items ?? [] {
             total += 1
             if item.isMastered { mastered += 1 }
             if item.lastReviewedDate != nil && item.nextReviewDate < startOfTomorrow { dueCount += 1 }

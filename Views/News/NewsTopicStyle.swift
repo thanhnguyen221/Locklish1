@@ -28,7 +28,7 @@ enum NewsTopicStyle {
     static func icon(_ topic: String) -> String {
         switch topic {
         case "technology": return "cpu.fill"
-        case "science": return "flask.conical.fill"
+        case "science": return "atom"
         case "business": return "chart.line.uptrend.xyaxis"
         case "health": return "heart.circle.fill"
         case "world": return "globe.asia.australia.fill"

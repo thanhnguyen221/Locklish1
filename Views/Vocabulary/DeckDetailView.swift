@@ -16,7 +16,7 @@ struct DeckDetailView: View {
     private var dueWordCount: Int {
         let startOfTomorrow = Calendar.current.date(byAdding: .day, value: 1, to: Calendar.current.startOfDay(for: Date())) ?? Date()
         var count = 0
-        for item in deck.items where item.lastReviewedDate != nil && item.nextReviewDate < startOfTomorrow {
+        for item in deck.items ?? [] where item.lastReviewedDate != nil && item.nextReviewDate < startOfTomorrow {
             count += 1
         }
         return count
@@ -117,7 +117,7 @@ struct DeckDetailView: View {
         }
 
         var lines = ["Word;IPA;Part of Speech;Meaning;Vietnamese Phonetic;Example;Example Translation"]
-        for item in deck.items {
+        for item in deck.items ?? [] {
             lines.append([
                 item.word,
                 item.ipa,
@@ -367,16 +367,16 @@ struct DeckDetailView: View {
 
                 Spacer()
 
-                Text("\(deck.items.count) từ")
+                Text("\(deck.items?.count ?? 0) từ")
                     .font(.caption)
                     .foregroundStyle(AppTheme.textTertiary)
             }
 
-            if deck.items.isEmpty {
+            if (deck.items ?? []).isEmpty {
                 emptyItemsView
             } else {
                 VStack(spacing: 10) {
-                    ForEach(deck.items) { item in
+                    ForEach(deck.items ?? []) { item in
                         vocabularyItemRow(for: item)
                     }
                 }
@@ -546,8 +546,8 @@ struct DeckDetailView: View {
     private func deleteItem(_ item: VocabularyItem) {
         HapticFeedback.error()
         withAnimation(.spring(response: 0.35, dampingFraction: 0.8)) {
-            if let index = deck.items.firstIndex(where: { $0.id == item.id }) {
-                deck.items.remove(at: index)
+            if let index = (deck.items ?? []).firstIndex(where: { $0.id == item.id }) {
+                deck.items?.remove(at: index)
             }
             modelContext.delete(item)
             try? modelContext.save()

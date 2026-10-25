@@ -5,7 +5,7 @@ import SwiftData
 /// Locklish: AI Focus Vocabulary App
 @main
 struct LocklishApp: App {
-    let sharedModelContainer: ModelContainer = {
+    static let sharedModelContainer: ModelContainer = {
         // The CloudKit-compatible schema change (dropped unique constraints,
         // added defaults) migrates the store on first open — snapshot it once
         // beforehand as cheap insurance for the user's data.
@@ -94,6 +94,6 @@ struct LocklishApp: App {
                     OnboardingView()
                 }
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(Self.sharedModelContainer)
     }
 }

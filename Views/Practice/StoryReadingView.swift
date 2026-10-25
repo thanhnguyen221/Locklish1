@@ -225,7 +225,7 @@ struct StoryReadingView: View {
                     ForEach(targetWords, id: \.self) { word in
                         let level = viewModel.cefrLevel(for: word)
                         Button {
-                            viewModel.selectWord(word, deckItems: deck.items)
+                            viewModel.selectWord(word, deckItems: deck.items ?? [])
                         } label: {
                             HStack(spacing: 5) {
                                 Text(level)
@@ -311,7 +311,7 @@ struct StoryReadingView: View {
                     // Highlighted Target Word Pill with CEFR Badge
                     let level = viewModel.cefrLevel(for: token.cleanWord)
                     Button {
-                        viewModel.selectWord(token.cleanWord, sentenceContext: text, deckItems: deck.items)
+                        viewModel.selectWord(token.cleanWord, sentenceContext: text, deckItems: deck.items ?? [])
                     } label: {
                         HStack(spacing: 3) {
                             Text(token.rawText)
@@ -336,7 +336,7 @@ struct StoryReadingView: View {
                 } else if !token.cleanWord.isEmpty {
                     // Normal Clickable Word
                     Button {
-                        viewModel.selectWord(token.cleanWord, sentenceContext: text, deckItems: deck.items)
+                        viewModel.selectWord(token.cleanWord, sentenceContext: text, deckItems: deck.items ?? [])
                     } label: {
                         Text(token.rawText)
                             .font(.system(size: viewModel.fontSize, weight: isCurrent ? .semibold : .regular))

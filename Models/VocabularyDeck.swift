@@ -15,8 +15,10 @@ final class VocabularyDeck: Identifiable {
     var createdAt: Date = Date()
     var colorHex: String = "#4E73DF"
 
+    // CloudKit requires relationships to be optional — the array stays nil
+    // for empty decks instead of holding an empty non-optional relationship.
     @Relationship(deleteRule: .cascade, inverse: \VocabularyItem.deck)
-    var items: [VocabularyItem] = []
+    var items: [VocabularyItem]? = nil
 
     init(
         id: UUID = UUID(),
@@ -36,20 +38,21 @@ final class VocabularyDeck: Identifiable {
 
     // MARK: - Convenience Computed Properties
     var wordCount: Int {
-        items.count
+        (items ?? []).count
     }
 
     var masteredCount: Int {
-        items.filter { $0.isMastered }.count
+        (items ?? []).filter { $0.isMastered }.count
     }
 
     var unmasteredCount: Int {
-        items.filter { !$0.isMastered }.count
+        (items ?? []).filter { !$0.isMastered }.count
     }
 
     var progressRatio: Double {
-        guard !items.isEmpty else { return 0.0 }
-        return Double(masteredCount) / Double(items.count)
+        let all = items ?? []
+        guard !all.isEmpty else { return 0.0 }
+        return Double(masteredCount) / Double(all.count)
     }
 
     var accentColor: Color {

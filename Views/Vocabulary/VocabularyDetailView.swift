@@ -65,7 +65,7 @@ struct VocabularyDetailView: View {
                                         .clipShape(Capsule())
                                 }
 
-                                if let deck = decks.first(where: { $0.items.contains(where: { $0.id == item.id }) }) {
+                                if let deck = decks.first(where: { ($0.items ?? []).contains(where: { $0.id == item.id }) }) {
                                     HStack(spacing: 5) {
                                         Image(systemName: "folder.fill")
                                             .font(.caption2)

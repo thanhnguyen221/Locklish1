@@ -265,7 +265,7 @@ final class ImportViewModel {
             let newItem = dto.toModel()
             modelContext.insert(newItem)
             if let targetDeck = targetDeck {
-                targetDeck.items.append(newItem)
+                targetDeck.items = (targetDeck.items ?? []) + [newItem]
             }
             savedCount += 1
         }

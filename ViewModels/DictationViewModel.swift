@@ -44,7 +44,7 @@ final class DictationViewModel {
         // 1. Filter by deck if selected
         let scopedItems: [VocabularyItem]
         if let filter = deckFilter {
-            scopedItems = filter.items
+            scopedItems = filter.items ?? []
         } else {
             scopedItems = allItems
         }

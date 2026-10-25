@@ -27,7 +27,7 @@ struct DeckStatsView: View {
         let startOfToday = calendar.startOfDay(for: Date())
         var stats = Stats()
 
-        for item in deck.items {
+        for item in deck.items ?? [] {
             guard let reviewed = item.lastReviewedDate else {
                 stats.newItems.append(item)
                 continue

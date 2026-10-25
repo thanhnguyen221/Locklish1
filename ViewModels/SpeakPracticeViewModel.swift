@@ -59,7 +59,7 @@ final class SpeakPracticeViewModel {
     // MARK: - Session Setup
 
     func loadQueue(from deck: VocabularyDeck) {
-        let items = deck.items.filter { !$0.isMultipleChoice }
+        let items = (deck.items ?? []).filter { !$0.isMultipleChoice }
         queue = SRSEngine.shared.balanceDailyQueue(from: items, limit: min(max(items.count, 1), 20))
         currentIndex = 0
         lastResult = nil

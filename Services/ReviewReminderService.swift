@@ -100,16 +100,9 @@ final class ReviewReminderService {
     // MARK: - Due Count (SM-2 truth)
 
     /// Words across every deck whose SM-2 review lands today or earlier.
-    /// A single lazily-created container serves these rare lookups so the main
-    /// app store is never touched from a background task.
-    private static let queryContainer: ModelContainer? = try? ModelContainer(
-        for: VocabularyItem.self, VocabularyDeck.self, DailyPracticeRecord.self
-    )
-
+    /// Reuses the app's own container (same store, same CloudKit state).
     private static func currentDueCount() -> Int {
-        guard let container = queryContainer else { return 0 }
-
-        let context = ModelContext(container)
+        let context = ModelContext(LocklishApp.sharedModelContainer)
         let startOfTomorrow = Calendar.current.date(
             byAdding: .day, value: 1, to: Calendar.current.startOfDay(for: Date())
         ) ?? Date()

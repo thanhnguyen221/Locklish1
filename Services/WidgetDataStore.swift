@@ -7,16 +7,11 @@ import WidgetKit
 /// pushes them into the shared App Group, then reloads widget timelines so the
 /// home screen updates immediately after practice.
 enum WidgetDataStore {
-    /// One shared container for out-of-view refreshes (practice screens call
-    /// this when they disappear, so the widget updates right after a session).
-    private static let queryContainer: ModelContainer? = try? ModelContainer(
-        for: VocabularyItem.self, VocabularyDeck.self, DailyPracticeRecord.self
-    )
-
-    /// Fetches every item through a lightweight context and pushes the widget.
+    /// Reuses the app's own container (same store, same CloudKit state) —
+    /// creating a second default container caused a duplicate store file and
+    /// a second CloudKit initialization that failed on simulator.
     static func refreshFromModel() {
-        guard let container = queryContainer else { return }
-        let context = ModelContext(container)
+        let context = ModelContext(LocklishApp.sharedModelContainer)
         let descriptor = FetchDescriptor<VocabularyItem>()
         guard let items = try? context.fetch(descriptor) else { return }
         refresh(items: items)

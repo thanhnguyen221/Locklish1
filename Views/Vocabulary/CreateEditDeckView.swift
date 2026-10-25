@@ -326,7 +326,7 @@ struct CreateEditDeckView: View {
                 note: card.note
             )
             modelContext.insert(item)
-            deck.items.append(item)
+            deck.items = (deck.items ?? []) + [item]
         }
 
         try? modelContext.save()

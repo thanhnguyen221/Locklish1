@@ -50,7 +50,7 @@ final class FlashcardViewModel {
         // 1. Filter by deck if a deck is selected
         let scopedItems: [VocabularyItem]
         if let filter = deckFilter {
-            scopedItems = filter.items
+            scopedItems = filter.items ?? []
         } else {
             scopedItems = items
         }

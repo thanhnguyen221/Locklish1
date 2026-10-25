@@ -536,7 +536,7 @@ struct CambridgeDictionarySheet: View {
                                 Text(deck.name)
                                     .font(.headline)
                                     .foregroundStyle(AppTheme.textPrimary)
-                                Text("\(deck.items.count) từ")
+                                Text("\(deck.items?.count ?? 0) từ")
                                     .font(.caption)
                                     .foregroundStyle(AppTheme.textSecondary)
                             }
@@ -574,7 +574,7 @@ struct CambridgeDictionarySheet: View {
             example: info.contextSentenceEn ?? info.exampleEn,
             exampleTranslation: info.contextSentenceVi ?? info.exampleVi
         )
-        deck.items.append(newItem)
+        deck.items = (deck.items ?? []) + [newItem]
         modelContext.insert(newItem)
         try? modelContext.save()
 
@@ -594,7 +594,7 @@ struct CambridgeDictionarySheet: View {
     private func isWordAlreadySaved(word: String) -> Bool {
         let clean = WordInfoService.shared.sanitizeWord(word).lowercased()
         for d in allDecks {
-            if d.items.contains(where: { $0.word.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() == clean }) {
+            if (d.items ?? []).contains(where: { $0.word.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() == clean }) {
                 return true
             }
         }

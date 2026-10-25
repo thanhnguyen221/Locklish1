@@ -277,7 +277,7 @@ final class YouTubeStudyViewModel {
     func refreshSavedWords(from decks: [VocabularyDeck]) {
         var set = Set<String>()
         for d in decks {
-            for it in d.items {
+            for it in d.items ?? [] {
                 let clean = WordInfoService.shared.sanitizeWord(it.word).lowercased()
                 if !clean.isEmpty {
                     set.insert(clean)
