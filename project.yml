@@ -42,16 +42,11 @@ targets:
           - remote-notification
         NSMicrophoneUsageDescription: "Locklish dùng micro để luyện phát âm: bạn đọc từ/câu và app chấm điểm tương đồng."
         NSSpeechRecognitionUsageDescription: "Locklish dùng nhận diện giọng nói để so sánh phần bạn đọc với từ vựng gốc."
-    entitlements:
-      path: Locklish.entitlements
-      properties:
-        com.apple.security.application-groups:
-          - group.com.locklish.shared
-        com.apple.developer.icloud-container-identifiers:
-          - iCloud.com.locklish.app
-        com.apple.developer.icloud-services:
-          - CloudKit
-        aps-environment: development
+    # Entitlements set per-configuration in settings below (XcodeGen's
+    # entitlements.path would clobber per-config values):
+    #   Debug/Release (paid account, simulator): full iCloud + Push + App Group
+    #   Personal (free account, real device): empty — free teams cannot
+    #   provision those capabilities; app falls back to local-only mode.
     settings:
       base:
         PRODUCT_NAME: Locklish
@@ -68,9 +63,12 @@ targets:
         ENABLE_PREVIEWS: YES
         ENABLE_USER_SCRIPT_SANDBOXING: YES
         ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+        CODE_SIGN_ENTITLEMENTS: Locklish-Personal.entitlements
       configs:
-        Personal:
-          CODE_SIGN_ENTITLEMENTS: Locklish-Personal.entitlements
+        Debug:
+          CODE_SIGN_ENTITLEMENTS: Locklish.entitlements
+        Release:
+          CODE_SIGN_ENTITLEMENTS: Locklish.entitlements
 
   LocklishWidget:
     type: app-extension
@@ -86,11 +84,6 @@ targets:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widget-extension
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).LocklishWidgetBundle
-    entitlements:
-      path: LocklishWidget.entitlements
-      properties:
-        com.apple.security.application-groups:
-          - group.com.locklish.shared
     settings:
       base:
         PRODUCT_NAME: LocklishWidget
@@ -102,9 +95,12 @@ targets:
         ENTITLEMENTS_REQUIRED: YES
         SKIP_INSTALL: YES
         ENABLE_USER_SCRIPT_SANDBOXING: YES
+        CODE_SIGN_ENTITLEMENTS: LocklishWidget-Personal.entitlements
       configs:
-        Personal:
-          CODE_SIGN_ENTITLEMENTS: LocklishWidget-Personal.entitlements
+        Debug:
+          CODE_SIGN_ENTITLEMENTS: LocklishWidget.entitlements
+        Release:
+          CODE_SIGN_ENTITLEMENTS: LocklishWidget.entitlements
 
 schemes:
   Locklish:

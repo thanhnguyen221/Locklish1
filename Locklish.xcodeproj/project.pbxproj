@@ -787,7 +787,7 @@
 		6C9E0CBA9A6613DDEC51E87C /* Personal */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = LocklishWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "LocklishWidget-Personal.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				ENTITLEMENTS_REQUIRED = YES;
@@ -841,7 +841,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CODE_SIGN_ENTITLEMENTS = Locklish.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Locklish-Personal.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
