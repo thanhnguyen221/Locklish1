@@ -14,6 +14,12 @@ An AI-powered English learning app for iOS, featuring intelligent vocabulary ext
 >
 > *This is a **personal vibe-coded product**: the entire app was built through conversational AI pair-programming, where every feature originated from the author's own daily English-learning needs and personal design decisions — created to improve his own study quality. The repo also serves as a real-world showcase of the vibe-coding workflow: idea → prompt → AI implementation → verification on simulator & device.*
 
+> ### ⚠️ Lưu ý sử dụng — Usage Notice
+> Repository này được công khai **chỉ để xem tham khảo** cho mục đích đánh giá năng lực (nhà tuyển dụng, nghiên cứu). 
+> **Không được phép sao chép, fork, tái sử dụng hoặc phân phối toàn bộ hay bất kỳ phần nào của mã nguồn** — tất cả quyền được bảo lưu theo pháp luật.
+>
+> *This repository is made public **for reference/evaluation only** (recruiters, research). **Copying, forking, reusing, or redistributing any part of this codebase is strictly prohibited.** All rights reserved.*
+
 ## 📺 Video Demo
 Experience the smart import, karaoke subtitles and bilingual news reading in action:
 
@@ -200,9 +206,15 @@ This project was developed as an independent research project (alongside scienti
 
 ---
 
-## 📄 License
+## 📄 License — All Rights Reserved
 
-This project is licensed under the MIT License.
+Copyright (c) 2026 Thanh Nguyen-Nhut. **Tất cả quyền được bảo lưu.**
+
+Code trong repository được công khai **chỉ để xem và đánh giá** (portfolio / nhà tuyển dụng). Không cấp giấy phép sử dụng, sao chép, sửa đổi hay phân phối dưới bất kỳ hình thức nào mà không có sự đồng ý bằng văn bản từ tác giả.
+
+*The code is made available for viewing and evaluation purposes only (portfolio / recruitment). No license is granted to use, copy, modify, or distribute this software without prior written permission from the author.*
+
+📩 Liên hệ xin phép sử dụng: thanhfff55@gmail.com
 
 ---
 
