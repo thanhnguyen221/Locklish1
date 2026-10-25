@@ -1,0 +1,1042 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D63B854E51C2865D79C177 /* SpeakPracticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4F5863A610AEE9B6E535D3 /* SpeakPracticeViewModel.swift */; };
+		07C8043C8EF127253CE0CD75 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D52AD74533C77C75FC2FD32 /* OnboardingView.swift */; };
+		08C2B504BD43880B1CD2C222 /* WidgetDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9A7622BC5D432357312D4D /* WidgetDataStore.swift */; };
+		0A86093338C5CA5672A3DC9D /* NewsArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0716CFAC1E24ED6B0D41876 /* NewsArticleView.swift */; };
+		0B6F3DB1B47D3ECD64759E45 /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66705A2A17AE2F105D375A17 /* GeminiService.swift */; };
+		0BC43A3074CC9AED6BDDCAE3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 543C5C97F809C5F302B828F4 /* PrivacyInfo.xcprivacy */; };
+		1929FF033004C1BAFAC82B2F /* AddEditWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08649BE1AB0D325C7D141B0 /* AddEditWordView.swift */; };
+		1BC39B406EDAED13448CFCD8 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210EE36657336678D23B8700 /* HapticFeedback.swift */; };
+		1C238F923EBFD42B02854D5A /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159CB87E4F9FDB6C5F411FE6 /* NewsService.swift */; };
+		207EDB61341FEA8499B37884 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAA4D40099AF01304C12EAA /* WidgetSnapshot.swift */; };
+		22270A9CDACEC5B07B9BF42D /* YouTubePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078BAB926CFE965DA07926B /* YouTubePlayerView.swift */; };
+		277B9A053744B197DA28D375 /* WordInfoPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D37725D56B936C11A5AA50 /* WordInfoPopupView.swift */; };
+		281EDCE32D37AFD2DC35B35B /* LocalVocabularyExtractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAAB5A649CD44402196DE5A /* LocalVocabularyExtractorService.swift */; };
+		28E951749E5BF9F2038D26F7 /* StoryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B292880DB79405472CB1C2F4 /* StoryModels.swift */; };
+		2911EEAD9E21513A650F3F3E /* YouTubeSubtitleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAD517A563FCAF3D793F8F /* YouTubeSubtitleService.swift */; };
+		2B5BF5CA63407DB813890A60 /* grammar_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 28BC4E1A66CFBB88DF676F02 /* grammar_data.json */; };
+		2B8399DC4B3E258AEA816964 /* DeckStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDBEFA080A653965A8BEC93 /* DeckStatsView.swift */; };
+		2C16112E7F019A820C937C71 /* SRSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD70F03647B1312D721A1414 /* SRSEngine.swift */; };
+		2EC365B02995EA78519C37B0 /* NewsUserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA4864486A141CB167B201 /* NewsUserSettings.swift */; };
+		31FFA519634719ED50BA02B5 /* LocklishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30E3C71A348A4AD2D97C599 /* LocklishApp.swift */; };
+		3408A1803A56C95A25C1EF2A /* GamifiedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83F3C30E34424105E167CE6 /* GamifiedViewModel.swift */; };
+		408738FBBD0AA579504BB439 /* VocabularyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8694D8DC2CC39A803F4E4A21 /* VocabularyListViewModel.swift */; };
+		43159088F59EC0BBB85DB68A /* news_sources.json in Resources */ = {isa = PBXBuildFile; fileRef = 03A9F68F2B9413A702F66A2A /* news_sources.json */; };
+		446E32EA5A608F8CFE52499D /* ScreenTimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1979A2264833FF107FE7C1FC /* ScreenTimeService.swift */; };
+		4AF3265A2E20E0CC4BD49810 /* YouTubeStudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E819ED909D481EC56D1CA53 /* YouTubeStudyView.swift */; };
+		4B20B577EBF0A78333A3E0EC /* EmptyStatePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA9268C35148896BAB84CFF /* EmptyStatePlaceholderView.swift */; };
+		4BF4BA1A0BE0836ACD657782 /* VocabularyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A44983A5711C9BF9F6B58 /* VocabularyDetailView.swift */; };
+		4D06594AEFA10C17871B5639 /* WordInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B874F7C443B5145E481DEFC /* WordInfoService.swift */; };
+		4E279A48E9E7A46F0BF5C687 /* IPATableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605FC70148838F6433DF7190 /* IPATableView.swift */; };
+		50EF145E7BABF3FCB6DFE418 /* ImportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874DA84F945BE31864BA9DB /* ImportViewModel.swift */; };
+		5472DA4A8CEBB8ED27E58368 /* GrammarTopicsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E50B6148CA5F5F11AB767B /* GrammarTopicsListView.swift */; };
+		54F44680601270D1CF4958BE /* FlipCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080A579AF812C92AB07E12B4 /* FlipCardView.swift */; };
+		5733B2C8E23D6363FFAADFC4 /* PDFExtractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA723F3679F7AB6EAAC861 /* PDFExtractorService.swift */; };
+		58A9BBD1A09EF9BA480E57E6 /* DictationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAFF67DD21D1304D8BAADD9 /* DictationViewModel.swift */; };
+		58AF2AD3B72168668F564790 /* ArticleTranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAAACF3E0CE8CE934B2A1D2 /* ArticleTranslationService.swift */; };
+		5C4B8E8983BDBBC4649AA3BC /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E25D2A689377C4690BA24 /* MainTabView.swift */; };
+		5D16E41045C867227F8819AA /* VocabularyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A863BD5EC0C0750046E29 /* VocabularyListView.swift */; };
+		675AFC0C8ACE732BFA7DEA27 /* TextProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D32920AE2EDD701FB3CE39 /* TextProcessingService.swift */; };
+		68BE37E3A12CC7ABBAAB2038 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9691182D94FBDF47BA725F /* Color+Extensions.swift */; };
+		6A07E7678CE1D91D248460B6 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAA4D40099AF01304C12EAA /* WidgetSnapshot.swift */; };
+		6DA88F4CC78EAEDF1BE31F28 /* SessionProgressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE75F1E1916CC9D23B2EF0C /* SessionProgressManager.swift */; };
+		6E6FAE2B2A78E45EF254FC87 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF65220A69DC9FB4108931E /* NewsListView.swift */; };
+		736BE186E52645E798FF3988 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBB2E353C4131E5F18DFDFE /* SettingsView.swift */; };
+		755E916B0514A0CA820B045C /* LocklishWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2F3CBF2C97CF51041CC52173 /* LocklishWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		79634AC5934533D249C932A7 /* WordImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1A402AC2E1D3C74E4B61A4 /* WordImagePickerView.swift */; };
+		7B212673D762FEEC5A47D1FB /* NewsTopicStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AC6A1FF98E5C61956B7CF3 /* NewsTopicStyle.swift */; };
+		7B5A9A834DF5F877638982A0 /* vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = C4E5AF6DFCD6A7CB3AB53EA6 /* vocabulary.json */; };
+		7E7D51D8C8D4799C737EC2F0 /* DictationPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0F9EA3573A4E7EA031DC9A /* DictationPracticeView.swift */; };
+		7EC4B1666E357095731B7D12 /* GamifiedGameHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553D30A276C53C7EB3BF6A2 /* GamifiedGameHubView.swift */; };
+		84A595C47841589091C7CF57 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEDDC69AC5E4FBCBBFC93E /* AppTheme.swift */; };
+		85FBA0D6DF5AD65AF19964BD /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038095232522A2362EF8A967 /* SettingsViewModel.swift */; };
+		8844368151F9CB0901B99687 /* CSVImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB887406568831D4E6F73C4 /* CSVImportService.swift */; };
+		889A8C8E1905BD556D6F9BAD /* PracticeHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC0EED2E8583CE016874670 /* PracticeHubView.swift */; };
+		88F88ABC99026B1BD541C327 /* locklish_vocabulary_merged.json in Resources */ = {isa = PBXBuildFile; fileRef = 03C9A6DA338EABB69876C27B /* locklish_vocabulary_merged.json */; };
+		890F5ECD72D9EB324B0DD5B3 /* GrammarLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284816ACBAE55E1ABDB8D48B /* GrammarLessonView.swift */; };
+		90A92B9EC16165E48083B317 /* DailyPracticeRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1349243EAAF081F7B4F74A9 /* DailyPracticeRecord.swift */; };
+		90C65027BA6E1D252590D708 /* StoryGeneratorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78D6B5EEBBAD40E339D6D3C /* StoryGeneratorService.swift */; };
+		94B7F7CB53C2F202756568EE /* YouTubeSubtitleTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B01F212A17239A64454F578 /* YouTubeSubtitleTrack.swift */; };
+		95C7B73709B4DE38E99E2FCA /* GrammarRoadmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083A5DBBE65054C7ADA4E26D /* GrammarRoadmapView.swift */; };
+		9D5B71FA4E4B6D38C0A08969 /* GameThemeCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074F480FD5E1B2BDCB928F4 /* GameThemeCatalog.swift */; };
+		A3B119C8A013BDFE4C7AF514 /* GamifiedDrillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BAB2255063EE4B9C932231 /* GamifiedDrillView.swift */; };
+		A40E21249F9E432F6B1865F4 /* VocabularyDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C793F85F38E7C5E3B615A4 /* VocabularyDeck.swift */; };
+		A79A71E2BC2C7AF657AC2795 /* ImportVocabularyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF350C2FBFD4070B5E2ECDE4 /* ImportVocabularyView.swift */; };
+		A98CE2562AA13602B572B0D7 /* CreateEditDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B70427FF4ADCD801AAD84D /* CreateEditDeckView.swift */; };
+		AB833C074F8B9CA3485F2D6C /* GrammarProgressStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FFF09042E2692E0A98A1C3 /* GrammarProgressStore.swift */; };
+		B156531389911F3CBE103D7F /* FocusLockSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A0C085EDBE7607B5EC7BD /* FocusLockSettingsView.swift */; };
+		B232793950F32D83771B36B0 /* YouTubeStudyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDCB2AB4BAC54434F519B2F /* YouTubeStudyViewModel.swift */; };
+		B3EB2B0F845B779134D49528 /* StreakService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69ADFF393F790DE6F5F4FAD /* StreakService.swift */; };
+		B82C5BEBDBE4F4A5BB8B1758 /* TTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E4F3538F407E509FFCD0CB /* TTSService.swift */; };
+		BE871CA7B24A1F3B62249FFB /* ReviewReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C1D005AB48EC6C128943E4 /* ReviewReminderService.swift */; };
+		C008660F9938405B693B28D7 /* CloudSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CF0A3F18481DA5BC004E20 /* CloudSyncService.swift */; };
+		C2FA4AEEE8329413215E23DB /* FlashcardPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24985717AEBA5DE2F2B2A46 /* FlashcardPracticeView.swift */; };
+		C30831E697DD6B4331D86E3F /* LevenshteinEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B66B934CF5089FEBB34BA0D /* LevenshteinEngine.swift */; };
+		CDE57120CF429B743D41D592 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021E7872B59B3057CEE1F77 /* SpeechRecognitionService.swift */; };
+		CE1D6D2BFE5B20CB558DBE19 /* FlashcardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148DB25DB74DE98FEEAE70C /* FlashcardViewModel.swift */; };
+		CE8B9467AE4803DFA02F7E25 /* CambridgeDictionarySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F2A72EE6738CAD771F9918 /* CambridgeDictionarySheet.swift */; };
+		CF7B029B50A9B88A51909793 /* StoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7C1BE000B72EAFACC2180 /* StoryViewModel.swift */; };
+		CFAC0A1F3A3ED8555A1DB291 /* GrammarDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B12C49E05F34FF6E23E061 /* GrammarDataService.swift */; };
+		DE935D8209D4EE0E2A1CB02D /* LocklishWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBAA3A1BE029A19ACE6D653 /* LocklishWidget.swift */; };
+		E0E6B43D5A4D7CEBE1CCB0B2 /* NewsSettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B23DEFF55E2B9AF82D2D291 /* NewsSettingsSheet.swift */; };
+		E1455582F3B7D51E6D523D2B /* VocabularyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DE092F355D1A09B26AD0D6 /* VocabularyItem.swift */; };
+		E19416AF4520B564F74A6819 /* SpeakPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3FFD737A799E92BAD50159 /* SpeakPracticeView.swift */; };
+		E1EBF9BC5112941FE97C2D9C /* GameCatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D968BDF761BB70B7B6164B /* GameCatalogService.swift */; };
+		E7C66C0153AA032AEF3FEC2B /* DeckDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A86449F49B48815327237 /* DeckDetailView.swift */; };
+		E8421900E99D5249A96FAE46 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3C2A335BF4BC1D9116705 /* FlowLayout.swift */; };
+		F05CC54DD9D6BA8451058EB2 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BC4DE661552E118565B650 /* View+Extensions.swift */; };
+		F1997DC17D95AB80322FEC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1290C1BD9F49FB7057B47B6B /* Assets.xcassets */; };
+		F43A3531113588C67BE867D9 /* NewsFullTextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF9C0D3D3452830BD4E0F73 /* NewsFullTextService.swift */; };
+		F7C48BA0078224552CD1CA21 /* AudioSpeakerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8491C24A5C00DD546C758167 /* AudioSpeakerButton.swift */; };
+		FBE7A10D9AC134131257F6EA /* StoryReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A247FE875B30F6D698AA8E2 /* StoryReadingView.swift */; };
+		FD234BC55736E7471E483994 /* GrammarHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5258182EE027A0EF9C41DB26 /* GrammarHubView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3EC1E56032E2143807D3694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EB97351A6BE66AC4CA040B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ED65A138A8E73F1423FF2EA;
+			remoteInfo = LocklishWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD3473875903E7E7F33DAA6E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				755E916B0514A0CA820B045C /* LocklishWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02E50B6148CA5F5F11AB767B /* GrammarTopicsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarTopicsListView.swift; sourceTree = "<group>"; };
+		038095232522A2362EF8A967 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		03A9F68F2B9413A702F66A2A /* news_sources.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = news_sources.json; sourceTree = "<group>"; };
+		03C9A6DA338EABB69876C27B /* locklish_vocabulary_merged.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locklish_vocabulary_merged.json; sourceTree = "<group>"; };
+		080A579AF812C92AB07E12B4 /* FlipCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCardView.swift; sourceTree = "<group>"; };
+		083A5DBBE65054C7ADA4E26D /* GrammarRoadmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarRoadmapView.swift; sourceTree = "<group>"; };
+		0A247FE875B30F6D698AA8E2 /* StoryReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryReadingView.swift; sourceTree = "<group>"; };
+		0B874F7C443B5145E481DEFC /* WordInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordInfoService.swift; sourceTree = "<group>"; };
+		0C9691182D94FBDF47BA725F /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		0CE75F1E1916CC9D23B2EF0C /* SessionProgressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProgressManager.swift; sourceTree = "<group>"; };
+		0E7A44983A5711C9BF9F6B58 /* VocabularyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyDetailView.swift; sourceTree = "<group>"; };
+		1290C1BD9F49FB7057B47B6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		159CB87E4F9FDB6C5F411FE6 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		1979A2264833FF107FE7C1FC /* ScreenTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeService.swift; sourceTree = "<group>"; };
+		1CC0EED2E8583CE016874670 /* PracticeHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeHubView.swift; sourceTree = "<group>"; };
+		1D534C39C2B9D57A25E98630 /* Locklish.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Locklish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E819ED909D481EC56D1CA53 /* YouTubeStudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeStudyView.swift; sourceTree = "<group>"; };
+		1FDBEFA080A653965A8BEC93 /* DeckStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckStatsView.swift; sourceTree = "<group>"; };
+		200A863BD5EC0C0750046E29 /* VocabularyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyListView.swift; sourceTree = "<group>"; };
+		210EE36657336678D23B8700 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		284816ACBAE55E1ABDB8D48B /* GrammarLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarLessonView.swift; sourceTree = "<group>"; };
+		28BC4E1A66CFBB88DF676F02 /* grammar_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar_data.json; sourceTree = "<group>"; };
+		2B01F212A17239A64454F578 /* YouTubeSubtitleTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeSubtitleTrack.swift; sourceTree = "<group>"; };
+		2B9A7622BC5D432357312D4D /* WidgetDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataStore.swift; sourceTree = "<group>"; };
+		2D52AD74533C77C75FC2FD32 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		2F3CBF2C97CF51041CC52173 /* LocklishWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = LocklishWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3148DB25DB74DE98FEEAE70C /* FlashcardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardViewModel.swift; sourceTree = "<group>"; };
+		39BC4DE661552E118565B650 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		3BA9268C35148896BAB84CFF /* EmptyStatePlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStatePlaceholderView.swift; sourceTree = "<group>"; };
+		3BFAD517A563FCAF3D793F8F /* YouTubeSubtitleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeSubtitleService.swift; sourceTree = "<group>"; };
+		3E1A402AC2E1D3C74E4B61A4 /* WordImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordImagePickerView.swift; sourceTree = "<group>"; };
+		4078BAB926CFE965DA07926B /* YouTubePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerView.swift; sourceTree = "<group>"; };
+		44DE092F355D1A09B26AD0D6 /* VocabularyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyItem.swift; sourceTree = "<group>"; };
+		4CBEDDC69AC5E4FBCBBFC93E /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		4D4F5863A610AEE9B6E535D3 /* SpeakPracticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakPracticeViewModel.swift; sourceTree = "<group>"; };
+		4DF9C0D3D3452830BD4E0F73 /* NewsFullTextService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFullTextService.swift; sourceTree = "<group>"; };
+		5258182EE027A0EF9C41DB26 /* GrammarHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarHubView.swift; sourceTree = "<group>"; };
+		543C5C97F809C5F302B828F4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		5AAAB5A649CD44402196DE5A /* LocalVocabularyExtractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalVocabularyExtractorService.swift; sourceTree = "<group>"; };
+		605FC70148838F6433DF7190 /* IPATableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPATableView.swift; sourceTree = "<group>"; };
+		6563749713A7F5540281499E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		66705A2A17AE2F105D375A17 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		7074F480FD5E1B2BDCB928F4 /* GameThemeCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameThemeCatalog.swift; sourceTree = "<group>"; };
+		72F2A72EE6738CAD771F9918 /* CambridgeDictionarySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CambridgeDictionarySheet.swift; sourceTree = "<group>"; };
+		7553D30A276C53C7EB3BF6A2 /* GamifiedGameHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamifiedGameHubView.swift; sourceTree = "<group>"; };
+		79B70427FF4ADCD801AAD84D /* CreateEditDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditDeckView.swift; sourceTree = "<group>"; };
+		7DDCB2AB4BAC54434F519B2F /* YouTubeStudyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeStudyViewModel.swift; sourceTree = "<group>"; };
+		7FAAACF3E0CE8CE934B2A1D2 /* ArticleTranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTranslationService.swift; sourceTree = "<group>"; };
+		8021E7872B59B3057CEE1F77 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		8491C24A5C00DD546C758167 /* AudioSpeakerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpeakerButton.swift; sourceTree = "<group>"; };
+		8694D8DC2CC39A803F4E4A21 /* VocabularyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyListViewModel.swift; sourceTree = "<group>"; };
+		8CBB2E353C4131E5F18DFDFE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8DB887406568831D4E6F73C4 /* CSVImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVImportService.swift; sourceTree = "<group>"; };
+		9B23DEFF55E2B9AF82D2D291 /* NewsSettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSettingsSheet.swift; sourceTree = "<group>"; };
+		9B66B934CF5089FEBB34BA0D /* LevenshteinEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevenshteinEngine.swift; sourceTree = "<group>"; };
+		A08649BE1AB0D325C7D141B0 /* AddEditWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditWordView.swift; sourceTree = "<group>"; };
+		A30E3C71A348A4AD2D97C599 /* LocklishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocklishApp.swift; sourceTree = "<group>"; };
+		A5AA723F3679F7AB6EAAC861 /* PDFExtractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExtractorService.swift; sourceTree = "<group>"; };
+		A6D32920AE2EDD701FB3CE39 /* TextProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProcessingService.swift; sourceTree = "<group>"; };
+		A874DA84F945BE31864BA9DB /* ImportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportViewModel.swift; sourceTree = "<group>"; };
+		A9B12C49E05F34FF6E23E061 /* GrammarDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarDataService.swift; sourceTree = "<group>"; };
+		B1AC6A1FF98E5C61956B7CF3 /* NewsTopicStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTopicStyle.swift; sourceTree = "<group>"; };
+		B24985717AEBA5DE2F2B2A46 /* FlashcardPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardPracticeView.swift; sourceTree = "<group>"; };
+		B292880DB79405472CB1C2F4 /* StoryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModels.swift; sourceTree = "<group>"; };
+		B2BAB2255063EE4B9C932231 /* GamifiedDrillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamifiedDrillView.swift; sourceTree = "<group>"; };
+		B6B3C2A335BF4BC1D9116705 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		B7C1D005AB48EC6C128943E4 /* ReviewReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewReminderService.swift; sourceTree = "<group>"; };
+		B83F3C30E34424105E167CE6 /* GamifiedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamifiedViewModel.swift; sourceTree = "<group>"; };
+		BBAA4D40099AF01304C12EAA /* WidgetSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshot.swift; sourceTree = "<group>"; };
+		BBBAA3A1BE029A19ACE6D653 /* LocklishWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocklishWidget.swift; sourceTree = "<group>"; };
+		BD5E25D2A689377C4690BA24 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		C2FFF09042E2692E0A98A1C3 /* GrammarProgressStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarProgressStore.swift; sourceTree = "<group>"; };
+		C4E5AF6DFCD6A7CB3AB53EA6 /* vocabulary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vocabulary.json; sourceTree = "<group>"; };
+		C9D968BDF761BB70B7B6164B /* GameCatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCatalogService.swift; sourceTree = "<group>"; };
+		CBF65220A69DC9FB4108931E /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
+		CCAFF67DD21D1304D8BAADD9 /* DictationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictationViewModel.swift; sourceTree = "<group>"; };
+		CD70F03647B1312D721A1414 /* SRSEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRSEngine.swift; sourceTree = "<group>"; };
+		CFD7C1BE000B72EAFACC2180 /* StoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModel.swift; sourceTree = "<group>"; };
+		D0C793F85F38E7C5E3B615A4 /* VocabularyDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyDeck.swift; sourceTree = "<group>"; };
+		D26A86449F49B48815327237 /* DeckDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckDetailView.swift; sourceTree = "<group>"; };
+		D5CA4864486A141CB167B201 /* NewsUserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUserSettings.swift; sourceTree = "<group>"; };
+		E31A0C085EDBE7607B5EC7BD /* FocusLockSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusLockSettingsView.swift; sourceTree = "<group>"; };
+		E6D37725D56B936C11A5AA50 /* WordInfoPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordInfoPopupView.swift; sourceTree = "<group>"; };
+		E7CF0A3F18481DA5BC004E20 /* CloudSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSyncService.swift; sourceTree = "<group>"; };
+		EF350C2FBFD4070B5E2ECDE4 /* ImportVocabularyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportVocabularyView.swift; sourceTree = "<group>"; };
+		F0716CFAC1E24ED6B0D41876 /* NewsArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleView.swift; sourceTree = "<group>"; };
+		F1349243EAAF081F7B4F74A9 /* DailyPracticeRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPracticeRecord.swift; sourceTree = "<group>"; };
+		F69ADFF393F790DE6F5F4FAD /* StreakService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakService.swift; sourceTree = "<group>"; };
+		F78D6B5EEBBAD40E339D6D3C /* StoryGeneratorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryGeneratorService.swift; sourceTree = "<group>"; };
+		F8E4F3538F407E509FFCD0CB /* TTSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSService.swift; sourceTree = "<group>"; };
+		FD0F9EA3573A4E7EA031DC9A /* DictationPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictationPracticeView.swift; sourceTree = "<group>"; };
+		FF3FFD737A799E92BAD50159 /* SpeakPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakPracticeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00C81266B8ED9D29DD141B9F /* News */ = {
+			isa = PBXGroup;
+			children = (
+				F0716CFAC1E24ED6B0D41876 /* NewsArticleView.swift */,
+				CBF65220A69DC9FB4108931E /* NewsListView.swift */,
+				9B23DEFF55E2B9AF82D2D291 /* NewsSettingsSheet.swift */,
+				B1AC6A1FF98E5C61956B7CF3 /* NewsTopicStyle.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		29DFBCE90CD498EC0063155A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8491C24A5C00DD546C758167 /* AudioSpeakerButton.swift */,
+				72F2A72EE6738CAD771F9918 /* CambridgeDictionarySheet.swift */,
+				3BA9268C35148896BAB84CFF /* EmptyStatePlaceholderView.swift */,
+				2D52AD74533C77C75FC2FD32 /* OnboardingView.swift */,
+				3E1A402AC2E1D3C74E4B61A4 /* WordImagePickerView.swift */,
+				E6D37725D56B936C11A5AA50 /* WordInfoPopupView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		353F1EF774B9871F328495FC /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				6563749713A7F5540281499E /* Info.plist */,
+				BBBAA3A1BE029A19ACE6D653 /* LocklishWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		3D5C38818D9DF95D468F1D72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D534C39C2B9D57A25E98630 /* Locklish.app */,
+				2F3CBF2C97CF51041CC52173 /* LocklishWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5217CFE94945A418012531B5 /* YouTube */ = {
+			isa = PBXGroup;
+			children = (
+				4078BAB926CFE965DA07926B /* YouTubePlayerView.swift */,
+				1E819ED909D481EC56D1CA53 /* YouTubeStudyView.swift */,
+			);
+			path = YouTube;
+			sourceTree = "<group>";
+		};
+		5A3DEC8657266F0E10CD642E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1290C1BD9F49FB7057B47B6B /* Assets.xcassets */,
+				28BC4E1A66CFBB88DF676F02 /* grammar_data.json */,
+				03C9A6DA338EABB69876C27B /* locklish_vocabulary_merged.json */,
+				03A9F68F2B9413A702F66A2A /* news_sources.json */,
+				543C5C97F809C5F302B828F4 /* PrivacyInfo.xcprivacy */,
+				C4E5AF6DFCD6A7CB3AB53EA6 /* vocabulary.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E0B11329C67D13AEBD9B057 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BBAA4D40099AF01304C12EAA /* WidgetSnapshot.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		71C3815C654724278985D575 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E31A0C085EDBE7607B5EC7BD /* FocusLockSettingsView.swift */,
+				8CBB2E353C4131E5F18DFDFE /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8427CFBD9A8903667A2AEECC /* Grammar */ = {
+			isa = PBXGroup;
+			children = (
+				5258182EE027A0EF9C41DB26 /* GrammarHubView.swift */,
+				284816ACBAE55E1ABDB8D48B /* GrammarLessonView.swift */,
+				083A5DBBE65054C7ADA4E26D /* GrammarRoadmapView.swift */,
+				02E50B6148CA5F5F11AB767B /* GrammarTopicsListView.swift */,
+				605FC70148838F6433DF7190 /* IPATableView.swift */,
+			);
+			path = Grammar;
+			sourceTree = "<group>";
+		};
+		A056FB2CC412AC752CA8D055 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0C9691182D94FBDF47BA725F /* Color+Extensions.swift */,
+				39BC4DE661552E118565B650 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A6FD1560687FD966DCE5419F /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				FD0F9EA3573A4E7EA031DC9A /* DictationPracticeView.swift */,
+				B24985717AEBA5DE2F2B2A46 /* FlashcardPracticeView.swift */,
+				080A579AF812C92AB07E12B4 /* FlipCardView.swift */,
+				B2BAB2255063EE4B9C932231 /* GamifiedDrillView.swift */,
+				7553D30A276C53C7EB3BF6A2 /* GamifiedGameHubView.swift */,
+				1CC0EED2E8583CE016874670 /* PracticeHubView.swift */,
+				FF3FFD737A799E92BAD50159 /* SpeakPracticeView.swift */,
+				0A247FE875B30F6D698AA8E2 /* StoryReadingView.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		BA7AD59D23C3F15F0E62F505 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1349243EAAF081F7B4F74A9 /* DailyPracticeRecord.swift */,
+				7074F480FD5E1B2BDCB928F4 /* GameThemeCatalog.swift */,
+				B292880DB79405472CB1C2F4 /* StoryModels.swift */,
+				D0C793F85F38E7C5E3B615A4 /* VocabularyDeck.swift */,
+				44DE092F355D1A09B26AD0D6 /* VocabularyItem.swift */,
+				2B01F212A17239A64454F578 /* YouTubeSubtitleTrack.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C9302BA499A636C86498C459 = {
+			isa = PBXGroup;
+			children = (
+				FDD9D72223193E351C63756D /* App */,
+				A056FB2CC412AC752CA8D055 /* Extensions */,
+				BA7AD59D23C3F15F0E62F505 /* Models */,
+				5A3DEC8657266F0E10CD642E /* Resources */,
+				DABFB541B057EA32325AF107 /* Services */,
+				6E0B11329C67D13AEBD9B057 /* Shared */,
+				D86703CCD0CF1346CE404218 /* Utilities */,
+				CB285DFC0E90CF5514DB0FAA /* ViewModels */,
+				CFFC1F3C74DB87B909A582FA /* Views */,
+				353F1EF774B9871F328495FC /* Widget */,
+				3D5C38818D9DF95D468F1D72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB285DFC0E90CF5514DB0FAA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CCAFF67DD21D1304D8BAADD9 /* DictationViewModel.swift */,
+				3148DB25DB74DE98FEEAE70C /* FlashcardViewModel.swift */,
+				B83F3C30E34424105E167CE6 /* GamifiedViewModel.swift */,
+				A874DA84F945BE31864BA9DB /* ImportViewModel.swift */,
+				038095232522A2362EF8A967 /* SettingsViewModel.swift */,
+				4D4F5863A610AEE9B6E535D3 /* SpeakPracticeViewModel.swift */,
+				CFD7C1BE000B72EAFACC2180 /* StoryViewModel.swift */,
+				8694D8DC2CC39A803F4E4A21 /* VocabularyListViewModel.swift */,
+				7DDCB2AB4BAC54434F519B2F /* YouTubeStudyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CFFC1F3C74DB87B909A582FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD5E25D2A689377C4690BA24 /* MainTabView.swift */,
+				29DFBCE90CD498EC0063155A /* Components */,
+				8427CFBD9A8903667A2AEECC /* Grammar */,
+				00C81266B8ED9D29DD141B9F /* News */,
+				A6FD1560687FD966DCE5419F /* Practice */,
+				71C3815C654724278985D575 /* Settings */,
+				F1B9ABEB3D7E5665E09A8310 /* Vocabulary */,
+				5217CFE94945A418012531B5 /* YouTube */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D86703CCD0CF1346CE404218 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEDDC69AC5E4FBCBBFC93E /* AppTheme.swift */,
+				B6B3C2A335BF4BC1D9116705 /* FlowLayout.swift */,
+				210EE36657336678D23B8700 /* HapticFeedback.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DABFB541B057EA32325AF107 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7FAAACF3E0CE8CE934B2A1D2 /* ArticleTranslationService.swift */,
+				E7CF0A3F18481DA5BC004E20 /* CloudSyncService.swift */,
+				8DB887406568831D4E6F73C4 /* CSVImportService.swift */,
+				C9D968BDF761BB70B7B6164B /* GameCatalogService.swift */,
+				66705A2A17AE2F105D375A17 /* GeminiService.swift */,
+				A9B12C49E05F34FF6E23E061 /* GrammarDataService.swift */,
+				C2FFF09042E2692E0A98A1C3 /* GrammarProgressStore.swift */,
+				9B66B934CF5089FEBB34BA0D /* LevenshteinEngine.swift */,
+				5AAAB5A649CD44402196DE5A /* LocalVocabularyExtractorService.swift */,
+				4DF9C0D3D3452830BD4E0F73 /* NewsFullTextService.swift */,
+				159CB87E4F9FDB6C5F411FE6 /* NewsService.swift */,
+				D5CA4864486A141CB167B201 /* NewsUserSettings.swift */,
+				A5AA723F3679F7AB6EAAC861 /* PDFExtractorService.swift */,
+				B7C1D005AB48EC6C128943E4 /* ReviewReminderService.swift */,
+				1979A2264833FF107FE7C1FC /* ScreenTimeService.swift */,
+				0CE75F1E1916CC9D23B2EF0C /* SessionProgressManager.swift */,
+				8021E7872B59B3057CEE1F77 /* SpeechRecognitionService.swift */,
+				CD70F03647B1312D721A1414 /* SRSEngine.swift */,
+				F78D6B5EEBBAD40E339D6D3C /* StoryGeneratorService.swift */,
+				F69ADFF393F790DE6F5F4FAD /* StreakService.swift */,
+				A6D32920AE2EDD701FB3CE39 /* TextProcessingService.swift */,
+				F8E4F3538F407E509FFCD0CB /* TTSService.swift */,
+				2B9A7622BC5D432357312D4D /* WidgetDataStore.swift */,
+				0B874F7C443B5145E481DEFC /* WordInfoService.swift */,
+				3BFAD517A563FCAF3D793F8F /* YouTubeSubtitleService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F1B9ABEB3D7E5665E09A8310 /* Vocabulary */ = {
+			isa = PBXGroup;
+			children = (
+				A08649BE1AB0D325C7D141B0 /* AddEditWordView.swift */,
+				79B70427FF4ADCD801AAD84D /* CreateEditDeckView.swift */,
+				D26A86449F49B48815327237 /* DeckDetailView.swift */,
+				1FDBEFA080A653965A8BEC93 /* DeckStatsView.swift */,
+				EF350C2FBFD4070B5E2ECDE4 /* ImportVocabularyView.swift */,
+				0E7A44983A5711C9BF9F6B58 /* VocabularyDetailView.swift */,
+				200A863BD5EC0C0750046E29 /* VocabularyListView.swift */,
+			);
+			path = Vocabulary;
+			sourceTree = "<group>";
+		};
+		FDD9D72223193E351C63756D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A30E3C71A348A4AD2D97C599 /* LocklishApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9ED65A138A8E73F1423FF2EA /* LocklishWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C5071CA693582819ADCF168 /* Build configuration list for PBXNativeTarget "LocklishWidget" */;
+			buildPhases = (
+				33BD579AD6BC81FEB5FA6248 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocklishWidget;
+			packageProductDependencies = (
+			);
+			productName = LocklishWidget;
+			productReference = 2F3CBF2C97CF51041CC52173 /* LocklishWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F18A6AF7AA984190CBB9D1C4 /* Locklish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED300EC9590FB41E1286963 /* Build configuration list for PBXNativeTarget "Locklish" */;
+			buildPhases = (
+				ADDB0AAE9CDB55915A7D25FC /* Sources */,
+				A48FC2EC959E6FD1857EF62D /* Resources */,
+				AD3473875903E7E7F33DAA6E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97FCAE8F7B8978C6A581F5B8 /* PBXTargetDependency */,
+			);
+			name = Locklish;
+			packageProductDependencies = (
+			);
+			productName = Locklish;
+			productReference = 1D534C39C2B9D57A25E98630 /* Locklish.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EB97351A6BE66AC4CA040B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9ED65A138A8E73F1423FF2EA = {
+						ProvisioningStyle = Automatic;
+					};
+					F18A6AF7AA984190CBB9D1C4 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C55F94409A34DB5C2DEB8C98 /* Build configuration list for PBXProject "Locklish" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C9302BA499A636C86498C459;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3D5C38818D9DF95D468F1D72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F18A6AF7AA984190CBB9D1C4 /* Locklish */,
+				9ED65A138A8E73F1423FF2EA /* LocklishWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A48FC2EC959E6FD1857EF62D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1997DC17D95AB80322FEC53 /* Assets.xcassets in Resources */,
+				0BC43A3074CC9AED6BDDCAE3 /* PrivacyInfo.xcprivacy in Resources */,
+				2B5BF5CA63407DB813890A60 /* grammar_data.json in Resources */,
+				88F88ABC99026B1BD541C327 /* locklish_vocabulary_merged.json in Resources */,
+				43159088F59EC0BBB85DB68A /* news_sources.json in Resources */,
+				7B5A9A834DF5F877638982A0 /* vocabulary.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33BD579AD6BC81FEB5FA6248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE935D8209D4EE0E2A1CB02D /* LocklishWidget.swift in Sources */,
+				6A07E7678CE1D91D248460B6 /* WidgetSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADDB0AAE9CDB55915A7D25FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1929FF033004C1BAFAC82B2F /* AddEditWordView.swift in Sources */,
+				84A595C47841589091C7CF57 /* AppTheme.swift in Sources */,
+				58AF2AD3B72168668F564790 /* ArticleTranslationService.swift in Sources */,
+				F7C48BA0078224552CD1CA21 /* AudioSpeakerButton.swift in Sources */,
+				8844368151F9CB0901B99687 /* CSVImportService.swift in Sources */,
+				CE8B9467AE4803DFA02F7E25 /* CambridgeDictionarySheet.swift in Sources */,
+				C008660F9938405B693B28D7 /* CloudSyncService.swift in Sources */,
+				68BE37E3A12CC7ABBAAB2038 /* Color+Extensions.swift in Sources */,
+				A98CE2562AA13602B572B0D7 /* CreateEditDeckView.swift in Sources */,
+				90A92B9EC16165E48083B317 /* DailyPracticeRecord.swift in Sources */,
+				E7C66C0153AA032AEF3FEC2B /* DeckDetailView.swift in Sources */,
+				2B8399DC4B3E258AEA816964 /* DeckStatsView.swift in Sources */,
+				7E7D51D8C8D4799C737EC2F0 /* DictationPracticeView.swift in Sources */,
+				58A9BBD1A09EF9BA480E57E6 /* DictationViewModel.swift in Sources */,
+				4B20B577EBF0A78333A3E0EC /* EmptyStatePlaceholderView.swift in Sources */,
+				C2FA4AEEE8329413215E23DB /* FlashcardPracticeView.swift in Sources */,
+				CE1D6D2BFE5B20CB558DBE19 /* FlashcardViewModel.swift in Sources */,
+				54F44680601270D1CF4958BE /* FlipCardView.swift in Sources */,
+				E8421900E99D5249A96FAE46 /* FlowLayout.swift in Sources */,
+				B156531389911F3CBE103D7F /* FocusLockSettingsView.swift in Sources */,
+				E1EBF9BC5112941FE97C2D9C /* GameCatalogService.swift in Sources */,
+				9D5B71FA4E4B6D38C0A08969 /* GameThemeCatalog.swift in Sources */,
+				A3B119C8A013BDFE4C7AF514 /* GamifiedDrillView.swift in Sources */,
+				7EC4B1666E357095731B7D12 /* GamifiedGameHubView.swift in Sources */,
+				3408A1803A56C95A25C1EF2A /* GamifiedViewModel.swift in Sources */,
+				0B6F3DB1B47D3ECD64759E45 /* GeminiService.swift in Sources */,
+				CFAC0A1F3A3ED8555A1DB291 /* GrammarDataService.swift in Sources */,
+				FD234BC55736E7471E483994 /* GrammarHubView.swift in Sources */,
+				890F5ECD72D9EB324B0DD5B3 /* GrammarLessonView.swift in Sources */,
+				AB833C074F8B9CA3485F2D6C /* GrammarProgressStore.swift in Sources */,
+				95C7B73709B4DE38E99E2FCA /* GrammarRoadmapView.swift in Sources */,
+				5472DA4A8CEBB8ED27E58368 /* GrammarTopicsListView.swift in Sources */,
+				1BC39B406EDAED13448CFCD8 /* HapticFeedback.swift in Sources */,
+				4E279A48E9E7A46F0BF5C687 /* IPATableView.swift in Sources */,
+				50EF145E7BABF3FCB6DFE418 /* ImportViewModel.swift in Sources */,
+				A79A71E2BC2C7AF657AC2795 /* ImportVocabularyView.swift in Sources */,
+				C30831E697DD6B4331D86E3F /* LevenshteinEngine.swift in Sources */,
+				281EDCE32D37AFD2DC35B35B /* LocalVocabularyExtractorService.swift in Sources */,
+				31FFA519634719ED50BA02B5 /* LocklishApp.swift in Sources */,
+				5C4B8E8983BDBBC4649AA3BC /* MainTabView.swift in Sources */,
+				0A86093338C5CA5672A3DC9D /* NewsArticleView.swift in Sources */,
+				F43A3531113588C67BE867D9 /* NewsFullTextService.swift in Sources */,
+				6E6FAE2B2A78E45EF254FC87 /* NewsListView.swift in Sources */,
+				1C238F923EBFD42B02854D5A /* NewsService.swift in Sources */,
+				E0E6B43D5A4D7CEBE1CCB0B2 /* NewsSettingsSheet.swift in Sources */,
+				7B212673D762FEEC5A47D1FB /* NewsTopicStyle.swift in Sources */,
+				2EC365B02995EA78519C37B0 /* NewsUserSettings.swift in Sources */,
+				07C8043C8EF127253CE0CD75 /* OnboardingView.swift in Sources */,
+				5733B2C8E23D6363FFAADFC4 /* PDFExtractorService.swift in Sources */,
+				889A8C8E1905BD556D6F9BAD /* PracticeHubView.swift in Sources */,
+				BE871CA7B24A1F3B62249FFB /* ReviewReminderService.swift in Sources */,
+				2C16112E7F019A820C937C71 /* SRSEngine.swift in Sources */,
+				446E32EA5A608F8CFE52499D /* ScreenTimeService.swift in Sources */,
+				6DA88F4CC78EAEDF1BE31F28 /* SessionProgressManager.swift in Sources */,
+				736BE186E52645E798FF3988 /* SettingsView.swift in Sources */,
+				85FBA0D6DF5AD65AF19964BD /* SettingsViewModel.swift in Sources */,
+				E19416AF4520B564F74A6819 /* SpeakPracticeView.swift in Sources */,
+				00D63B854E51C2865D79C177 /* SpeakPracticeViewModel.swift in Sources */,
+				CDE57120CF429B743D41D592 /* SpeechRecognitionService.swift in Sources */,
+				90C65027BA6E1D252590D708 /* StoryGeneratorService.swift in Sources */,
+				28E951749E5BF9F2038D26F7 /* StoryModels.swift in Sources */,
+				FBE7A10D9AC134131257F6EA /* StoryReadingView.swift in Sources */,
+				CF7B029B50A9B88A51909793 /* StoryViewModel.swift in Sources */,
+				B3EB2B0F845B779134D49528 /* StreakService.swift in Sources */,
+				B82C5BEBDBE4F4A5BB8B1758 /* TTSService.swift in Sources */,
+				675AFC0C8ACE732BFA7DEA27 /* TextProcessingService.swift in Sources */,
+				F05CC54DD9D6BA8451058EB2 /* View+Extensions.swift in Sources */,
+				A40E21249F9E432F6B1865F4 /* VocabularyDeck.swift in Sources */,
+				4BF4BA1A0BE0836ACD657782 /* VocabularyDetailView.swift in Sources */,
+				E1455582F3B7D51E6D523D2B /* VocabularyItem.swift in Sources */,
+				5D16E41045C867227F8819AA /* VocabularyListView.swift in Sources */,
+				408738FBBD0AA579504BB439 /* VocabularyListViewModel.swift in Sources */,
+				08C2B504BD43880B1CD2C222 /* WidgetDataStore.swift in Sources */,
+				207EDB61341FEA8499B37884 /* WidgetSnapshot.swift in Sources */,
+				79634AC5934533D249C932A7 /* WordImagePickerView.swift in Sources */,
+				277B9A053744B197DA28D375 /* WordInfoPopupView.swift in Sources */,
+				4D06594AEFA10C17871B5639 /* WordInfoService.swift in Sources */,
+				22270A9CDACEC5B07B9BF42D /* YouTubePlayerView.swift in Sources */,
+				4AF3265A2E20E0CC4BD49810 /* YouTubeStudyView.swift in Sources */,
+				B232793950F32D83771B36B0 /* YouTubeStudyViewModel.swift in Sources */,
+				2911EEAD9E21513A650F3F3E /* YouTubeSubtitleService.swift in Sources */,
+				94B7F7CB53C2F202756568EE /* YouTubeSubtitleTrack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97FCAE8F7B8978C6A581F5B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ED65A138A8E73F1423FF2EA /* LocklishWidget */;
+			targetProxy = F3EC1E56032E2143807D3694 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13AFAE64D8D37FB5FD55A936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		381A3EA8FC4433097D5DA0C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6C9E0CBA9A6613DDEC51E87C /* Personal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LocklishWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENTITLEMENTS_REQUIRED = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.locklish.app.widget;
+				PRODUCT_NAME = LocklishWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Personal;
+		};
+		76FDF283F247E800C6F0280D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Locklish.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENTITLEMENTS_REQUIRED = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.locklish.app;
+				PRODUCT_NAME = Locklish;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77BCF2D3D84AF4E0D4E4F090 /* Personal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Locklish.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENTITLEMENTS_REQUIRED = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.locklish.app;
+				PRODUCT_NAME = Locklish;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Personal;
+		};
+		844BDCB2C3DE751489373B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LocklishWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENTITLEMENTS_REQUIRED = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.locklish.app.widget;
+				PRODUCT_NAME = LocklishWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFDC70A6C9229726FC5AF702 /* Personal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Personal;
+		};
+		BCE2B748802CC187E5316557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LocklishWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENTITLEMENTS_REQUIRED = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.locklish.app.widget;
+				PRODUCT_NAME = LocklishWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E70AC6BC0A850E8AA8E5A07D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Locklish.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENTITLEMENTS_REQUIRED = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.locklish.app;
+				PRODUCT_NAME = Locklish;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C5071CA693582819ADCF168 /* Build configuration list for PBXNativeTarget "LocklishWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCE2B748802CC187E5316557 /* Debug */,
+				6C9E0CBA9A6613DDEC51E87C /* Personal */,
+				844BDCB2C3DE751489373B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8ED300EC9590FB41E1286963 /* Build configuration list for PBXNativeTarget "Locklish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76FDF283F247E800C6F0280D /* Debug */,
+				77BCF2D3D84AF4E0D4E4F090 /* Personal */,
+				E70AC6BC0A850E8AA8E5A07D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C55F94409A34DB5C2DEB8C98 /* Build configuration list for PBXProject "Locklish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13AFAE64D8D37FB5FD55A936 /* Debug */,
+				AFDC70A6C9229726FC5AF702 /* Personal */,
+				381A3EA8FC4433097D5DA0C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EB97351A6BE66AC4CA040B9 /* Project object */;
+}

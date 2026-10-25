@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "version": "1.0",
+    "warning": "Đã kiểm chứng 25/10/2026: 24 nguồn OK, Guardian + Engadget + 3 Reddit chưa verify được (mạng chặn) nên enabled=false.",
+    "topics": [
+      "technology",
+      "science",
+      "business",
+      "health",
+      "world",
+      "education",
+      "learning_english"
+    ],
+    "verified_at": "2026-10-25"
+  },
+  "sources": [
+    {
+      "id": "bbc_technology",
+      "name": "BBC News - Technology",
+      "topic": "technology",
+      "feed_url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+      "level_hint": "B2-C1",
+      "enabled": true,
+      "notes": "RSS của BBC thường chỉ cho dùng cá nhân, phi thương mại. Chỉ hiển thị tiêu đề + tóm tắt ngắn + link sang bài gốc."
+    },
+    {
+      "id": "bbc_science",
+      "name": "BBC News - Science & Environment",
+      "topic": "science",
+      "feed_url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+      "level_hint": "B2-C1",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "bbc_business",
+      "name": "BBC News - Business",
+      "topic": "business",
+      "feed_url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "level_hint": "B2-C1",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "bbc_health",
+      "name": "BBC News - Health",
+      "topic": "health",
+      "feed_url": "https://feeds.bbci.co.uk/news/health/rss.xml",
+      "level_hint": "B2-C1",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "bbc_world",
+      "name": "BBC News - World",
+      "topic": "world",
+      "feed_url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "level_hint": "B2-C1",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "bbc_education",
+      "name": "BBC News - Education",
+      "topic": "education",
+      "feed_url": "https://feeds.bbci.co.uk/news/education/rss.xml",
+      "level_hint": "B2-C1",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "bbc_learning_english",
+      "name": "BBC Learning English",
+      "topic": "learning_english",
+      "feed_url": "https://www.bbc.co.uk/learningenglish/english/features/6-minute-english/rss",
+      "level_hint": "A2-B2",
+      "enabled": true,
+      "notes": "RSS chính thức của khóa 6 Minute English (501 bài lúc kiểm chứng). Chỉ dùng tiêu đề + tóm tắt + link gốc."
+    },
+    {
+      "id": "voa_learning_english",
+      "name": "VOA Learning English",
+      "topic": "learning_english",
+      "feed_url": "https://learningenglish.voanews.com/rss/",
+      "level_hint": "A2-B1",
+      "enabled": true,
+      "notes": "RSS chính thức VOA Learning English (20 bài lúc kiểm chứng)."
+    },
+    {
+      "id": "guardian_technology",
+      "name": "The Guardian - Technology",
+      "topic": "technology",
+      "feed_url": "https://www.theguardian.com/technology/rss",
+      "level_hint": "B2-C1",
+      "enabled": false,
+      "notes": "Feed timeout khi kiểm chứng (25/10/2026) — tạm tắt cho đến khi kiểm tra lại."
+    },
+    {
+      "id": "npr_technology",
+      "name": "NPR - Technology",
+      "topic": "technology",
+      "feed_url": "https://feeds.npr.org/1019/rss.xml",
+      "level_hint": "B1-B2",
+      "enabled": true,
+      "notes": "Văn phong nói dễ tiếp cận hơn báo viết."
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch",
+      "topic": "technology",
+      "feed_url": "https://techcrunch.com/feed/",
+      "level_hint": "B2-C1",
+      "enabled": true,
+      "notes": "Tin startup, AI, công nghệ."
+    },
+    {
+      "id": "ars_technica",
+      "name": "Ars Technica",
+      "topic": "technology",
+      "feed_url": "https://feeds.arstechnica.com/arstechnica/index",
+      "level_hint": "C1",
+      "enabled": true,
+      "notes": "Chuyên sâu, từ vựng kỹ thuật nhiều."
+    },
+    {
+      "id": "the_verge",
+      "name": "The Verge",
+      "topic": "technology",
+      "feed_url": "https://www.theverge.com/rss/index.xml",
+      "level_hint": "B2",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "wired",
+      "name": "WIRED",
+      "topic": "technology",
+      "feed_url": "https://www.wired.com/feed/rss",
+      "level_hint": "C1",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "mit_tech_review",
+      "name": "MIT Technology Review",
+      "topic": "technology",
+      "feed_url": "https://www.technologyreview.com/feed/",
+      "level_hint": "C1",
+      "enabled": true,
+      "notes": "Một phần nội dung có thể bị giới hạn sau paywall; chỉ lấy tiêu đề/tóm tắt trong feed."
+    },
+    {
+      "id": "hackernews",
+      "name": "Hacker News (front page)",
+      "topic": "technology",
+      "feed_url": "https://hnrss.org/frontpage?points=100",
+      "level_hint": "B2-C1",
+      "enabled": true,
+      "notes": "Bài điểm ≥100 từ Hacker News — thảo luận kỹ thuật chất lượng, tiếng Anh tự nhiên của giới dev."
+    },
+    {
+      "id": "verge_ai",
+      "name": "The Verge - AI",
+      "topic": "technology",
+      "feed_url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "level_hint": "B2",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "ars_gadgets",
+      "name": "Ars Technica - Gadgets",
+      "topic": "technology",
+      "feed_url": "https://arstechnica.com/gadgets/feed/",
+      "level_hint": "B2-C1",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "nyt_tech",
+      "name": "The New York Times - Technology",
+      "topic": "technology",
+      "feed_url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+      "level_hint": "B2-C1",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "apple_newsroom",
+      "name": "Apple Newsroom",
+      "topic": "technology",
+      "feed_url": "https://www.apple.com/newsroom/rss-feed.rss",
+      "level_hint": "B1-B2",
+      "enabled": true,
+      "notes": "Thông cáo báo chí — văn phong chuẩn mực, câu rõ ràng, hợp luyện đọc."
+    },
+    {
+      "id": "google_blog",
+      "name": "Google Blog",
+      "topic": "technology",
+      "feed_url": "https://blog.google/rss/",
+      "level_hint": "B1-B2",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "github_blog",
+      "name": "GitHub Blog",
+      "topic": "technology",
+      "feed_url": "https://github.blog/feed/",
+      "level_hint": "B2",
+      "enabled": true,
+      "notes": "Tin lập trình viên, nhiều thuật ngữ kỹ thuật."
+    },
+    {
+      "id": "stackoverflow_blog",
+      "name": "Stack Overflow Blog",
+      "topic": "education",
+      "feed_url": "https://stackoverflow.blog/feed/",
+      "level_hint": "B2",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "nasa",
+      "name": "NASA Breaking News",
+      "topic": "science",
+      "feed_url": "https://www.nasa.gov/rss/dyn/breaking_news.rss",
+      "level_hint": "B1-B2",
+      "enabled": true,
+      "notes": "Câu văn đơn giản, chủ đề hấp dẫn."
+    },
+    {
+      "id": "sciencedaily",
+      "name": "ScienceDaily - Top Science",
+      "topic": "science",
+      "feed_url": "https://www.sciencedaily.com/rss/top/science.xml",
+      "level_hint": "B2-C1",
+      "enabled": true,
+      "notes": ""
+    },
+    {
+      "id": "reddit_technology",
+      "name": "Reddit r/technology",
+      "topic": "technology",
+      "feed_url": "https://www.reddit.com/r/technology/.rss",
+      "level_hint": "B2-C1",
+      "enabled": false,
+      "notes": "RSS chính thức của Reddit nhưng bị chặn kết nối từ mạng kiểm chứng (25/10). Bật khi kiểm chứng được."
+    },
+    {
+      "id": "reddit_programming",
+      "name": "Reddit r/programming",
+      "topic": "technology",
+      "feed_url": "https://www.reddit.com/r/programming/.rss",
+      "level_hint": "B2-C1",
+      "enabled": false,
+      "notes": "Bị chặn kết nối khi kiểm chứng — bật sau khi verify."
+    },
+    {
+      "id": "reddit_machinelearning",
+      "name": "Reddit r/MachineLearning",
+      "topic": "science",
+      "feed_url": "https://www.reddit.com/r/MachineLearning/.rss",
+      "level_hint": "C1",
+      "enabled": false,
+      "notes": "Bị chặn kết nối khi kiểm chứng — bật sau khi verify."
+    },
+    {
+      "id": "engadget",
+      "name": "Engadget",
+      "topic": "technology",
+      "feed_url": "https://www.engadget.com/rss.xml",
+      "level_hint": "B2",
+      "enabled": false,
+      "notes": "Trả HTTP 202 (challenge) khi kiểm chứng — tạm tắt."
+    }
+  ]
+}

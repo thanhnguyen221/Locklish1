@@ -1,0 +1,559 @@
+{
+  "meta": {
+    "version": "1.0",
+    "language_of_explanation": "vi",
+    "framework": "CEFR (A1-B2)",
+    "note": "Nội dung tự soạn theo khung CEFR. Nên đối chiếu thêm với Cambridge Dictionary Grammar, British Council LearnEnglish, Oxford Learner's Dictionaries trước khi phát hành."
+  },
+  "roadmap": [
+    {
+      "phase": 1,
+      "level": "A1",
+      "title_vi": "Nền tảng",
+      "duration_weeks": 6,
+      "goals_vi": "Giới thiệu bản thân, hỏi đáp đơn giản, nói về thói quen hằng ngày.",
+      "ipa_focus": ["vowels_short_long", "common_consonants"],
+      "topic_ids": ["g01", "g02", "g03", "g04", "g05", "g06", "g07", "g08"]
+    },
+    {
+      "phase": 2,
+      "level": "A2",
+      "title_vi": "Giao tiếp cơ bản",
+      "duration_weeks": 8,
+      "goals_vi": "Kể chuyện quá khứ, nói về kế hoạch, so sánh, đưa lời khuyên.",
+      "ipa_focus": ["diphthongs", "final_consonants", "word_stress_basic"],
+      "topic_ids": ["g09", "g10", "g11", "g12", "g13", "g14", "g15", "g16"]
+    },
+    {
+      "phase": 3,
+      "level": "B1",
+      "title_vi": "Trung cấp",
+      "duration_weeks": 10,
+      "goals_vi": "Diễn đạt giả định, kể chuyện có mạch, tường thuật, dùng câu phức.",
+      "ipa_focus": ["weak_forms_schwa", "sentence_stress", "linking"],
+      "topic_ids": ["g17", "g18", "g19", "g20", "g21", "g22", "g23", "g24"]
+    },
+    {
+      "phase": 4,
+      "level": "B2",
+      "title_vi": "Trung - cao cấp (tùy chọn)",
+      "duration_weeks": 8,
+      "goals_vi": "Điều kiện nâng cao, suy đoán, thể hiện tiếc nuối, câu bị động nâng cao.",
+      "ipa_focus": ["intonation"],
+      "topic_ids": ["g25", "g26", "g27", "g28"]
+    }
+  ],
+  "ipa": {
+    "vowels_monophthongs": [
+      {"symbol": "iː", "type": "long", "example": "sheep /ʃiːp/", "tip_vi": "Âm 'i' kéo dài, môi kéo ngang."},
+      {"symbol": "ɪ", "type": "short", "example": "ship /ʃɪp/", "tip_vi": "Ngắn, thả lỏng, gần giữa 'i' và 'ê'."},
+      {"symbol": "e", "type": "short", "example": "bed /bed/", "tip_vi": "Giống 'e' tiếng Việt nhưng miệng mở hơn chút."},
+      {"symbol": "æ", "type": "short", "example": "cat /kæt/", "tip_vi": "Mở miệng rộng, giữa 'e' và 'a'."},
+      {"symbol": "ʌ", "type": "short", "example": "cup /kʌp/", "tip_vi": "Giống 'â' ngắn trong tiếng Việt."},
+      {"symbol": "ɑː", "type": "long", "example": "car /kɑː/", "tip_vi": "'a' kéo dài, miệng mở lớn."},
+      {"symbol": "ɒ", "type": "short", "example": "hot /hɒt/", "tip_vi": "Giống 'o' ngắn, tròn môi (giọng Anh-Anh)."},
+      {"symbol": "ɔː", "type": "long", "example": "door /dɔː/", "tip_vi": "'o' kéo dài, môi tròn."},
+      {"symbol": "ʊ", "type": "short", "example": "book /bʊk/", "tip_vi": "'u' ngắn, môi hơi tròn, thả lỏng."},
+      {"symbol": "uː", "type": "long", "example": "food /fuːd/", "tip_vi": "'u' kéo dài, môi tròn chặt."},
+      {"symbol": "ə", "type": "short", "example": "about /əˈbaʊt/", "tip_vi": "Schwa: âm yếu nhất, xuất hiện ở âm tiết không nhấn."},
+      {"symbol": "ɜː", "type": "long", "example": "bird /bɜːd/", "tip_vi": "Giống 'ơ' kéo dài."}
+    ],
+    "vowels_diphthongs": [
+      {"symbol": "eɪ", "example": "day /deɪ/", "tip_vi": "Từ 'ê' trượt sang 'i'."},
+      {"symbol": "aɪ", "example": "my /maɪ/", "tip_vi": "Từ 'a' trượt sang 'i'."},
+      {"symbol": "ɔɪ", "example": "boy /bɔɪ/", "tip_vi": "Từ 'o' trượt sang 'i'."},
+      {"symbol": "əʊ", "example": "go /gəʊ/", "tip_vi": "Từ 'ơ' trượt sang 'u'."},
+      {"symbol": "aʊ", "example": "now /naʊ/", "tip_vi": "Từ 'a' trượt sang 'u'."},
+      {"symbol": "ɪə", "example": "near /nɪə/", "tip_vi": "Từ 'i' trượt về 'ơ'."},
+      {"symbol": "eə", "example": "hair /heə/", "tip_vi": "Từ 'e' trượt về 'ơ'."},
+      {"symbol": "ʊə", "example": "tour /tʊə/", "tip_vi": "Từ 'u' trượt về 'ơ'."}
+    ],
+    "consonants": [
+      {"symbol": "p", "voiced": false, "example": "pen /pen/", "tip_vi": "Bật hơi nhẹ, khác 'p' tiếng Việt."},
+      {"symbol": "b", "voiced": true, "example": "big /bɪg/", "tip_vi": "Rung dây thanh."},
+      {"symbol": "t", "voiced": false, "example": "tea /tiː/", "tip_vi": "Đầu lưỡi chạm lợi trên, bật hơi."},
+      {"symbol": "d", "voiced": true, "example": "dog /dɒg/", "tip_vi": "Như 't' nhưng rung dây thanh."},
+      {"symbol": "k", "voiced": false, "example": "cat /kæt/", "tip_vi": "Bật hơi nhẹ."},
+      {"symbol": "g", "voiced": true, "example": "go /gəʊ/", "tip_vi": "Rung dây thanh."},
+      {"symbol": "f", "voiced": false, "example": "fish /fɪʃ/", "tip_vi": "Răng trên chạm môi dưới."},
+      {"symbol": "v", "voiced": true, "example": "very /ˈveri/", "tip_vi": "Như 'f' nhưng rung; hay bị đọc thành 'd/z'."},
+      {"symbol": "θ", "voiced": false, "example": "think /θɪŋk/", "tip_vi": "Lưỡi đặt giữa hai hàm răng, thổi hơi. Hay bị đọc thành 't/th'."},
+      {"symbol": "ð", "voiced": true, "example": "this /ðɪs/", "tip_vi": "Như θ nhưng rung dây thanh."},
+      {"symbol": "s", "voiced": false, "example": "see /siː/", "tip_vi": "Luôn phát âm âm cuối 's' (cats, books)."},
+      {"symbol": "z", "voiced": true, "example": "zoo /zuː/", "tip_vi": "Như 's' nhưng rung."},
+      {"symbol": "ʃ", "voiced": false, "example": "she /ʃiː/", "tip_vi": "Giống 'sh', môi hơi chu."},
+      {"symbol": "ʒ", "voiced": true, "example": "vision /ˈvɪʒn/", "tip_vi": "Như ʃ nhưng rung."},
+      {"symbol": "h", "voiced": false, "example": "hat /hæt/", "tip_vi": "Thở nhẹ từ cổ họng."},
+      {"symbol": "tʃ", "voiced": false, "example": "chair /tʃeə/", "tip_vi": "Giống 'ch'."},
+      {"symbol": "dʒ", "voiced": true, "example": "job /dʒɒb/", "tip_vi": "Như tʃ nhưng rung."},
+      {"symbol": "m", "voiced": true, "example": "man /mæn/", "tip_vi": "Khép môi."},
+      {"symbol": "n", "voiced": true, "example": "no /nəʊ/", "tip_vi": "Đầu lưỡi chạm lợi trên."},
+      {"symbol": "ŋ", "voiced": true, "example": "sing /sɪŋ/", "tip_vi": "Như 'ng' cuối từ; không bật 'g'."},
+      {"symbol": "l", "voiced": true, "example": "leg /leg/", "tip_vi": "Đầu lưỡi chạm lợi trên."},
+      {"symbol": "r", "voiced": true, "example": "red /red/", "tip_vi": "Cuộn lưỡi nhẹ, không chạm vòm miệng."},
+      {"symbol": "w", "voiced": true, "example": "we /wiː/", "tip_vi": "Chu môi như 'u' rồi mở nhanh."},
+      {"symbol": "j", "voiced": true, "example": "yes /jes/", "tip_vi": "Giống 'i' đầu từ, tương tự 'y' trong 'yes'."}
+    ],
+    "stress_marks": {
+      "ˈ": "Dấu nhấn chính, đặt trước âm tiết được nhấn (about /əˈbaʊt/)",
+      "ˌ": "Dấu nhấn phụ",
+      "ː": "Âm kéo dài"
+    },
+    "special_rules_vi": [
+      "Đuôi -s/-es: đọc /s/ sau âm vô thanh (cats), /z/ sau âm hữu thanh (dogs), /ɪz/ sau s, z, ʃ, ʒ, tʃ, dʒ (buses).",
+      "Đuôi -ed: đọc /t/ sau âm vô thanh (worked), /d/ sau âm hữu thanh (played), /ɪd/ sau t, d (wanted).",
+      "Người Việt hay bỏ âm cuối (final consonant): luôn luyện kỹ âm cuối như /t/, /d/, /s/, /z/, /k/."
+    ]
+  },
+  "topics": [
+    {
+      "id": "g01", "level": "A1", "title_en": "Verb to be", "title_vi": "Động từ to be (am/is/are)",
+      "explanation_vi": "Dùng để giới thiệu, nói về tên, nghề, tuổi, trạng thái. I am, you/we/they are, he/she/it is.",
+      "forms": ["(+) S + am/is/are + ...", "(-) S + am/is/are + not + ...", "(?) Am/Is/Are + S + ...?"],
+      "examples": [
+        {"en": "I am a student.", "vi": "Tôi là học sinh."},
+        {"en": "She is not at home.", "vi": "Cô ấy không ở nhà."}
+      ],
+      "common_mistakes": [
+        {"wrong": "She are happy.", "right": "She is happy.", "note_vi": "Chủ ngữ số ít (he/she/it) dùng is."}
+      ],
+      "exercises": [
+        {"q": "They ___ my friends.", "answer": "are"},
+        {"q": "___ he a doctor?", "answer": "Is"}
+      ]
+    },
+    {
+      "id": "g02", "level": "A1", "title_en": "Subject pronouns and possessive adjectives", "title_vi": "Đại từ chủ ngữ và tính từ sở hữu",
+      "explanation_vi": "I-my, you-your, he-his, she-her, it-its, we-our, they-their. Tính từ sở hữu đứng trước danh từ.",
+      "forms": ["Possessive adj + noun: my book, her bag"],
+      "examples": [
+        {"en": "This is my phone.", "vi": "Đây là điện thoại của tôi."},
+        {"en": "They love their teacher.", "vi": "Họ yêu quý giáo viên của họ."}
+      ],
+      "common_mistakes": [
+        {"wrong": "He loves she.", "right": "He loves her.", "note_vi": "Sau động từ dùng đại từ tân ngữ (me, him, her...)."}
+      ],
+      "exercises": [
+        {"q": "She is ___ sister. (she)", "answer": "my / her (tùy ngữ cảnh: her sister)"},
+        {"q": "We like ___ school. (we)", "answer": "our"}
+      ]
+    },
+    {
+      "id": "g03", "level": "A1", "title_en": "Articles: a, an, the", "title_vi": "Mạo từ a / an / the",
+      "explanation_vi": "a/an dùng cho danh từ đếm được số ít, chưa xác định. an trước nguyên âm (âm đọc, không phải chữ cái). the dùng khi người nghe đã biết rõ hoặc duy nhất.",
+      "forms": ["a + phụ âm", "an + nguyên âm", "the + danh từ xác định"],
+      "examples": [
+        {"en": "I have a dog and an umbrella.", "vi": "Tôi có một con chó và một cái ô."},
+        {"en": "The sun is hot.", "vi": "Mặt trời thì nóng."}
+      ],
+      "common_mistakes": [
+        {"wrong": "a hour", "right": "an hour", "note_vi": "'hour' bắt đầu bằng âm /aʊ/ nên dùng an."}
+      ],
+      "exercises": [
+        {"q": "She is ___ engineer.", "answer": "an"},
+        {"q": "Close ___ door, please.", "answer": "the"}
+      ]
+    },
+    {
+      "id": "g04", "level": "A1", "title_en": "Plural nouns", "title_vi": "Danh từ số nhiều",
+      "explanation_vi": "Thêm -s; -es sau s, x, ch, sh; đổi y thành ies sau phụ âm; một số bất quy tắc: man-men, child-children, foot-feet.",
+      "forms": ["noun + s / es / ies", "Irregular: man-men, woman-women, person-people"],
+      "examples": [
+        {"en": "Two boxes and three babies.", "vi": "Hai cái hộp và ba em bé."},
+        {"en": "The children are playing.", "vi": "Bọn trẻ đang chơi."}
+      ],
+      "common_mistakes": [
+        {"wrong": "two childs", "right": "two children", "note_vi": "Child là danh từ bất quy tắc."}
+      ],
+      "exercises": [
+        {"q": "one city, two ___", "answer": "cities"},
+        {"q": "one foot, two ___", "answer": "feet"}
+      ]
+    },
+    {
+      "id": "g05", "level": "A1", "title_en": "This, that, these, those", "title_vi": "Chỉ định từ",
+      "explanation_vi": "this/these: gần người nói. that/those: xa. this/that số ít; these/those số nhiều.",
+      "forms": ["This/That + is + noun (singular)", "These/Those + are + noun (plural)"],
+      "examples": [
+        {"en": "This is my bag.", "vi": "Đây là cặp của tôi."},
+        {"en": "Those are his shoes.", "vi": "Kia là giày của anh ấy."}
+      ],
+      "common_mistakes": [
+        {"wrong": "These is my book.", "right": "This is my book.", "note_vi": "Phải khớp số ít/số nhiều."}
+      ],
+      "exercises": [
+        {"q": "___ (near, plural) are my keys.", "answer": "These"},
+        {"q": "___ (far, singular) is a big tree.", "answer": "That"}
+      ]
+    },
+    {
+      "id": "g06", "level": "A1", "title_en": "Present simple", "title_vi": "Thì hiện tại đơn",
+      "explanation_vi": "Dùng cho thói quen, sự thật hiển nhiên, lịch trình. He/she/it thêm -s/-es.",
+      "forms": ["(+) S + V(s/es)", "(-) S + do/does + not + V", "(?) Do/Does + S + V?"],
+      "examples": [
+        {"en": "She works in a bank.", "vi": "Cô ấy làm việc ở ngân hàng."},
+        {"en": "Water boils at 100 degrees.", "vi": "Nước sôi ở 100 độ."}
+      ],
+      "common_mistakes": [
+        {"wrong": "He don't like coffee.", "right": "He doesn't like coffee.", "note_vi": "Ngôi thứ ba số ít dùng does."},
+        {"wrong": "Does she works?", "right": "Does she work?", "note_vi": "Sau does/do dùng động từ nguyên mẫu."}
+      ],
+      "exercises": [
+        {"q": "He ___ (go) to school by bus.", "answer": "goes"},
+        {"q": "___ you like pizza?", "answer": "Do"}
+      ]
+    },
+    {
+      "id": "g07", "level": "A1", "title_en": "There is / There are", "title_vi": "Có (there is/are)",
+      "explanation_vi": "Nói về sự tồn tại của người/vật. There is + số ít/không đếm được; there are + số nhiều.",
+      "forms": ["There is/are + noun + place", "Is/Are there + noun?"],
+      "examples": [
+        {"en": "There is a cat on the sofa.", "vi": "Có một con mèo trên ghế sofa."},
+        {"en": "Are there any eggs?", "vi": "Có quả trứng nào không?"}
+      ],
+      "common_mistakes": [
+        {"wrong": "There is three books.", "right": "There are three books.", "note_vi": "Danh từ số nhiều dùng are."}
+      ],
+      "exercises": [
+        {"q": "There ___ two chairs in the room.", "answer": "are"},
+        {"q": "There ___ some milk in the fridge.", "answer": "is"}
+      ]
+    },
+    {
+      "id": "g08", "level": "A1", "title_en": "Can / Can't", "title_vi": "Khả năng với can",
+      "explanation_vi": "Can diễn tả khả năng, xin phép. Theo sau là động từ nguyên mẫu không to.",
+      "forms": ["S + can/can't + V", "Can + S + V?"],
+      "examples": [
+        {"en": "I can swim.", "vi": "Tôi biết bơi."},
+        {"en": "Can I open the window?", "vi": "Tôi mở cửa sổ được không?"}
+      ],
+      "common_mistakes": [
+        {"wrong": "She can to sing.", "right": "She can sing.", "note_vi": "Không dùng to sau can."}
+      ],
+      "exercises": [
+        {"q": "He ___ speak three languages.", "answer": "can"},
+        {"q": "I ___ (not) drive.", "answer": "can't / cannot"}
+      ]
+    },
+    {
+      "id": "g09", "level": "A2", "title_en": "Present continuous", "title_vi": "Hiện tại tiếp diễn",
+      "explanation_vi": "Hành động đang diễn ra lúc nói hoặc kế hoạch gần. Dấu hiệu: now, at the moment, today.",
+      "forms": ["S + am/is/are + V-ing", "S + am/is/are + not + V-ing", "Am/Is/Are + S + V-ing?"],
+      "examples": [
+        {"en": "They are watching TV now.", "vi": "Bây giờ họ đang xem TV."},
+        {"en": "I am meeting her tomorrow.", "vi": "Ngày mai tôi sẽ gặp cô ấy."}
+      ],
+      "common_mistakes": [
+        {"wrong": "I am knowing the answer.", "right": "I know the answer.", "note_vi": "Động từ trạng thái (know, like, want) thường không dùng tiếp diễn."}
+      ],
+      "exercises": [
+        {"q": "She ___ (read) a book at the moment.", "answer": "is reading"},
+        {"q": "We ___ (not/work) today.", "answer": "are not working"}
+      ]
+    },
+    {
+      "id": "g10", "level": "A2", "title_en": "Past simple", "title_vi": "Quá khứ đơn",
+      "explanation_vi": "Hành động đã xảy ra và kết thúc trong quá khứ. Động từ có quy tắc thêm -ed; bất quy tắc phải học thuộc.",
+      "forms": ["(+) S + V2/ed", "(-) S + did not + V", "(?) Did + S + V?"],
+      "examples": [
+        {"en": "I visited Hue last year.", "vi": "Năm ngoái tôi đã đến Huế."},
+        {"en": "She didn't go to work yesterday.", "vi": "Hôm qua cô ấy không đi làm."}
+      ],
+      "common_mistakes": [
+        {"wrong": "Did you went there?", "right": "Did you go there?", "note_vi": "Sau did dùng động từ nguyên mẫu."}
+      ],
+      "exercises": [
+        {"q": "He ___ (buy) a new phone last week.", "answer": "bought"},
+        {"q": "___ they come to the party?", "answer": "Did"}
+      ]
+    },
+    {
+      "id": "g11", "level": "A2", "title_en": "Countable/uncountable nouns; some, any, much, many", "title_vi": "Danh từ đếm được/không đếm được và lượng từ",
+      "explanation_vi": "many + đếm được số nhiều; much + không đếm được; some dùng trong câu khẳng định; any dùng trong phủ định và nghi vấn.",
+      "forms": ["How many + plural noun?", "How much + uncountable noun?"],
+      "examples": [
+        {"en": "I don't have much time.", "vi": "Tôi không có nhiều thời gian."},
+        {"en": "Do you have any questions?", "vi": "Bạn có câu hỏi nào không?"}
+      ],
+      "common_mistakes": [
+        {"wrong": "How many water do you drink?", "right": "How much water do you drink?", "note_vi": "Water là danh từ không đếm được."}
+      ],
+      "exercises": [
+        {"q": "There isn't ___ sugar left.", "answer": "any"},
+        {"q": "How ___ students are there?", "answer": "many"}
+      ]
+    },
+    {
+      "id": "g12", "level": "A2", "title_en": "Comparatives and superlatives", "title_vi": "So sánh hơn và so sánh nhất",
+      "explanation_vi": "Tính từ ngắn: -er / -est. Tính từ dài: more / most. Bất quy tắc: good-better-best, bad-worse-worst.",
+      "forms": ["adj-er + than", "more + adj + than", "the + adj-est", "the most + adj"],
+      "examples": [
+        {"en": "This bag is cheaper than that one.", "vi": "Cái cặp này rẻ hơn cái kia."},
+        {"en": "She is the most intelligent student.", "vi": "Cô ấy là học sinh thông minh nhất."}
+      ],
+      "common_mistakes": [
+        {"wrong": "more taller", "right": "taller", "note_vi": "Không dùng đồng thời more và -er."}
+      ],
+      "exercises": [
+        {"q": "My house is ___ (big) than yours.", "answer": "bigger"},
+        {"q": "It is the ___ (good) movie I've seen.", "answer": "best"}
+      ]
+    },
+    {
+      "id": "g13", "level": "A2", "title_en": "Prepositions of time and place", "title_vi": "Giới từ chỉ thời gian và nơi chốn",
+      "explanation_vi": "Time: at (giờ), on (ngày), in (tháng/năm/mùa). Place: at (điểm), on (bề mặt), in (không gian bao quanh).",
+      "forms": ["at 7 o'clock / on Monday / in July", "at the bus stop / on the table / in the room"],
+      "examples": [
+        {"en": "The class starts at 8 on Monday.", "vi": "Lớp học bắt đầu lúc 8 giờ vào thứ Hai."},
+        {"en": "She lives in Da Nang.", "vi": "Cô ấy sống ở Đà Nẵng."}
+      ],
+      "common_mistakes": [
+        {"wrong": "I was born at 1998.", "right": "I was born in 1998.", "note_vi": "Năm dùng in."}
+      ],
+      "exercises": [
+        {"q": "We have lunch ___ noon.", "answer": "at"},
+        {"q": "My birthday is ___ May.", "answer": "in"}
+      ]
+    },
+    {
+      "id": "g14", "level": "A2", "title_en": "Future: will and be going to", "title_vi": "Tương lai: will và be going to",
+      "explanation_vi": "will: quyết định tức thời, dự đoán, lời hứa. be going to: dự định đã có sẵn hoặc dự đoán có căn cứ.",
+      "forms": ["S + will + V", "S + am/is/are going to + V"],
+      "examples": [
+        {"en": "I'll help you with that.", "vi": "Để tôi giúp bạn việc đó."},
+        {"en": "Look at those clouds. It is going to rain.", "vi": "Nhìn mấy đám mây kìa. Trời sắp mưa."}
+      ],
+      "common_mistakes": [
+        {"wrong": "I will to go.", "right": "I will go.", "note_vi": "Sau will dùng động từ nguyên mẫu không to."}
+      ],
+      "exercises": [
+        {"q": "I ___ (visit) my grandparents this weekend. (plan)", "answer": "am going to visit"},
+        {"q": "The phone is ringing. I ___ answer it.", "answer": "will / 'll"}
+      ]
+    },
+    {
+      "id": "g15", "level": "A2", "title_en": "Have to, must, should", "title_vi": "Bắt buộc và lời khuyên",
+      "explanation_vi": "have to / must: bắt buộc. mustn't: cấm. don't have to: không cần thiết. should: nên.",
+      "forms": ["S + must/should + V", "S + have/has to + V"],
+      "examples": [
+        {"en": "You must wear a helmet.", "vi": "Bạn phải đội mũ bảo hiểm."},
+        {"en": "You should see a doctor.", "vi": "Bạn nên đi khám bác sĩ."}
+      ],
+      "common_mistakes": [
+        {"wrong": "You mustn't come if you don't want to. (ý: không cần)", "right": "You don't have to come if you don't want to.", "note_vi": "mustn't = cấm; don't have to = không bắt buộc."}
+      ],
+      "exercises": [
+        {"q": "You ___ smoke here. It's forbidden.", "answer": "mustn't"},
+        {"q": "She ___ get up early on Sundays. (not necessary)", "answer": "doesn't have to"}
+      ]
+    },
+    {
+      "id": "g16", "level": "A2", "title_en": "Present perfect (basic)", "title_vi": "Hiện tại hoàn thành (cơ bản)",
+      "explanation_vi": "Trải nghiệm, kết quả còn liên quan hiện tại, với for/since/already/yet/ever/never.",
+      "forms": ["S + have/has + V3/ed", "S + have/has + not + V3", "Have/Has + S + V3?"],
+      "examples": [
+        {"en": "I have never been to Japan.", "vi": "Tôi chưa từng đến Nhật."},
+        {"en": "She has lived here since 2020.", "vi": "Cô ấy sống ở đây từ năm 2020."}
+      ],
+      "common_mistakes": [
+        {"wrong": "I have seen him yesterday.", "right": "I saw him yesterday.", "note_vi": "Có mốc thời gian quá khứ cụ thể thì dùng quá khứ đơn."}
+      ],
+      "exercises": [
+        {"q": "They ___ (finish) their homework already.", "answer": "have finished"},
+        {"q": "He has worked here ___ three years. (for/since)", "answer": "for"}
+      ]
+    },
+    {
+      "id": "g17", "level": "B1", "title_en": "Past continuous", "title_vi": "Quá khứ tiếp diễn",
+      "explanation_vi": "Hành động đang diễn ra tại một thời điểm trong quá khứ, hoặc bị một hành động khác cắt ngang.",
+      "forms": ["S + was/were + V-ing"],
+      "examples": [
+        {"en": "I was cooking when she called.", "vi": "Tôi đang nấu ăn thì cô ấy gọi."},
+        {"en": "They were playing football at 5 pm.", "vi": "Lúc 5 giờ chiều họ đang chơi bóng đá."}
+      ],
+      "common_mistakes": [
+        {"wrong": "When I was arriving, he left.", "right": "When I arrived, he left.", "note_vi": "Hành động ngắn, xảy ra lần lượt dùng quá khứ đơn."}
+      ],
+      "exercises": [
+        {"q": "She ___ (sleep) when the phone rang.", "answer": "was sleeping"},
+        {"q": "What ___ you ___ at 9 last night?", "answer": "were / doing"}
+      ]
+    },
+    {
+      "id": "g18", "level": "B1", "title_en": "Zero and first conditional", "title_vi": "Câu điều kiện loại 0 và 1",
+      "explanation_vi": "Loại 0: sự thật hiển nhiên (If + present, present). Loại 1: khả năng có thật ở tương lai (If + present, will + V).",
+      "forms": ["If + S + V(s), S + V(s)", "If + S + V(s), S + will + V"],
+      "examples": [
+        {"en": "If you heat ice, it melts.", "vi": "Nếu đun nóng đá, nó tan chảy."},
+        {"en": "If it rains, we will stay home.", "vi": "Nếu trời mưa, chúng tôi sẽ ở nhà."}
+      ],
+      "common_mistakes": [
+        {"wrong": "If it will rain, we stay home.", "right": "If it rains, we will stay home.", "note_vi": "Mệnh đề if không dùng will."}
+      ],
+      "exercises": [
+        {"q": "If she ___ (study), she will pass.", "answer": "studies"},
+        {"q": "If I see him, I ___ (tell) him.", "answer": "will tell"}
+      ]
+    },
+    {
+      "id": "g19", "level": "B1", "title_en": "Second conditional", "title_vi": "Câu điều kiện loại 2",
+      "explanation_vi": "Tình huống không có thật hoặc khó xảy ra ở hiện tại/tương lai. Dùng were cho mọi ngôi trong văn viết trang trọng.",
+      "forms": ["If + S + V2/were, S + would + V"],
+      "examples": [
+        {"en": "If I had more money, I would travel.", "vi": "Nếu tôi có nhiều tiền hơn, tôi sẽ đi du lịch."},
+        {"en": "If I were you, I would accept.", "vi": "Nếu tôi là bạn, tôi sẽ nhận lời."}
+      ],
+      "common_mistakes": [
+        {"wrong": "If I would have time, I would help.", "right": "If I had time, I would help.", "note_vi": "Không dùng would trong mệnh đề if."}
+      ],
+      "exercises": [
+        {"q": "If he ___ (be) taller, he would play basketball.", "answer": "were"},
+        {"q": "What would you do if you ___ (win) the lottery?", "answer": "won"}
+      ]
+    },
+    {
+      "id": "g20", "level": "B1", "title_en": "Passive voice (present and past)", "title_vi": "Câu bị động (hiện tại, quá khứ)",
+      "explanation_vi": "Nhấn mạnh hành động hoặc đối tượng chịu tác động, không cần/không biết người thực hiện.",
+      "forms": ["S + am/is/are + V3", "S + was/were + V3", "by + agent (nếu cần)"],
+      "examples": [
+        {"en": "English is spoken worldwide.", "vi": "Tiếng Anh được nói trên toàn thế giới."},
+        {"en": "The window was broken yesterday.", "vi": "Cửa sổ bị vỡ hôm qua."}
+      ],
+      "common_mistakes": [
+        {"wrong": "The house built in 1990.", "right": "The house was built in 1990.", "note_vi": "Bị động cần có to be."}
+      ],
+      "exercises": [
+        {"q": "Rice ___ (grow) in Vietnam.", "answer": "is grown"},
+        {"q": "The letter ___ (send) last week.", "answer": "was sent"}
+      ]
+    },
+    {
+      "id": "g21", "level": "B1", "title_en": "Relative clauses", "title_vi": "Mệnh đề quan hệ",
+      "explanation_vi": "who (người), which (vật), that (người/vật, xác định), whose (sở hữu), where (nơi chốn), when (thời gian).",
+      "forms": ["noun + who/which/that + clause"],
+      "examples": [
+        {"en": "The man who lives next door is a doctor.", "vi": "Người đàn ông sống bên cạnh là bác sĩ."},
+        {"en": "This is the book that I told you about.", "vi": "Đây là quyển sách tôi đã kể với bạn."}
+      ],
+      "common_mistakes": [
+        {"wrong": "The girl which sings is my sister.", "right": "The girl who sings is my sister.", "note_vi": "Người dùng who, không dùng which."}
+      ],
+      "exercises": [
+        {"q": "The city ___ I was born is small. (where/which)", "answer": "where"},
+        {"q": "She is the teacher ___ car was stolen.", "answer": "whose"}
+      ]
+    },
+    {
+      "id": "g22", "level": "B1", "title_en": "Gerunds and infinitives", "title_vi": "Danh động từ và động từ nguyên mẫu",
+      "explanation_vi": "enjoy, avoid, finish, mind + V-ing. want, decide, hope, plan + to V. like/love/start dùng được cả hai. stop/remember/forget đổi nghĩa theo dạng.",
+      "forms": ["verb + V-ing", "verb + to V"],
+      "examples": [
+        {"en": "She enjoys reading.", "vi": "Cô ấy thích đọc sách."},
+        {"en": "He decided to leave.", "vi": "Anh ấy quyết định rời đi."}
+      ],
+      "common_mistakes": [
+        {"wrong": "I enjoy to swim.", "right": "I enjoy swimming.", "note_vi": "enjoy đi với V-ing."}
+      ],
+      "exercises": [
+        {"q": "They want ___ (go) home.", "answer": "to go"},
+        {"q": "He avoided ___ (answer) the question.", "answer": "answering"}
+      ]
+    },
+    {
+      "id": "g23", "level": "B1", "title_en": "Reported speech", "title_vi": "Câu tường thuật",
+      "explanation_vi": "Lùi một thì khi động từ tường thuật ở quá khứ; đổi đại từ, trạng từ thời gian/nơi chốn cho phù hợp.",
+      "forms": ["S + said (that) + clause (lùi thì)", "asked + if/whether + clause"],
+      "examples": [
+        {"en": "\"I am tired,\" she said. -> She said she was tired.", "vi": "Cô ấy nói cô ấy mệt."},
+        {"en": "He asked if I liked coffee.", "vi": "Anh ấy hỏi tôi có thích cà phê không."}
+      ],
+      "common_mistakes": [
+        {"wrong": "She asked me where do I live.", "right": "She asked me where I lived.", "note_vi": "Câu hỏi tường thuật dùng trật tự câu khẳng định."}
+      ],
+      "exercises": [
+        {"q": "\"I like music,\" he said. -> He said he ___ music.", "answer": "liked"},
+        {"q": "\"Are you ready?\" she asked. -> She asked ___ I was ready.", "answer": "if / whether"}
+      ]
+    },
+    {
+      "id": "g24", "level": "B1", "title_en": "Present perfect continuous", "title_vi": "Hiện tại hoàn thành tiếp diễn",
+      "explanation_vi": "Nhấn mạnh quá trình kéo dài đến hiện tại hoặc vừa kết thúc có kết quả nhìn thấy được.",
+      "forms": ["S + have/has + been + V-ing"],
+      "examples": [
+        {"en": "I have been learning English for two years.", "vi": "Tôi học tiếng Anh được hai năm rồi."},
+        {"en": "She is tired. She has been running.", "vi": "Cô ấy mệt. Cô ấy vừa chạy bộ."}
+      ],
+      "common_mistakes": [
+        {"wrong": "I am learning English since 2022.", "right": "I have been learning English since 2022.", "note_vi": "since/for với quá trình kéo dài dùng hoàn thành tiếp diễn."}
+      ],
+      "exercises": [
+        {"q": "They ___ (wait) for an hour.", "answer": "have been waiting"},
+        {"q": "How long ___ she ___ (work) here?", "answer": "has / been working"}
+      ]
+    },
+    {
+      "id": "g25", "level": "B2", "title_en": "Third conditional", "title_vi": "Câu điều kiện loại 3",
+      "explanation_vi": "Giả định trái với quá khứ, diễn tả tiếc nuối.",
+      "forms": ["If + S + had + V3, S + would have + V3"],
+      "examples": [
+        {"en": "If I had studied, I would have passed.", "vi": "Nếu tôi đã học, tôi đã đậu."},
+        {"en": "She would have come if she had known.", "vi": "Cô ấy đã đến nếu cô ấy biết."}
+      ],
+      "common_mistakes": [
+        {"wrong": "If I would have known, I would have told you.", "right": "If I had known, I would have told you.", "note_vi": "Mệnh đề if dùng had + V3."}
+      ],
+      "exercises": [
+        {"q": "If he ___ (leave) earlier, he wouldn't have missed the train.", "answer": "had left"},
+        {"q": "We ___ (win) if we had played better.", "answer": "would have won"}
+      ]
+    },
+    {
+      "id": "g26", "level": "B2", "title_en": "Modals of deduction", "title_vi": "Động từ khuyết thiếu chỉ suy đoán",
+      "explanation_vi": "must (chắc chắn đúng), may/might/could (có thể), can't (chắc chắn không). Quá khứ: must/might/can't + have + V3.",
+      "forms": ["must/might/can't + V", "must/might/can't + have + V3"],
+      "examples": [
+        {"en": "He must be at home. The lights are on.", "vi": "Chắc anh ấy ở nhà. Đèn đang sáng."},
+        {"en": "She can't have forgotten.", "vi": "Cô ấy không thể nào đã quên."}
+      ],
+      "common_mistakes": [
+        {"wrong": "He must been tired.", "right": "He must have been tired.", "note_vi": "Suy đoán quá khứ cần have + V3."}
+      ],
+      "exercises": [
+        {"q": "The ground is wet. It ___ rained.", "answer": "must have"},
+        {"q": "He ___ be a teacher; he's only 15.", "answer": "can't"}
+      ]
+    },
+    {
+      "id": "g27", "level": "B2", "title_en": "Wish and if only", "title_vi": "Câu ước (wish / if only)",
+      "explanation_vi": "wish + past simple: ước điều trái hiện tại. wish + past perfect: tiếc nuối quá khứ. wish + would: phàn nàn về hành vi.",
+      "forms": ["wish + S + V2", "wish + S + had V3", "wish + S + would V"],
+      "examples": [
+        {"en": "I wish I had a car.", "vi": "Giá mà tôi có xe hơi."},
+        {"en": "I wish I hadn't said that.", "vi": "Giá mà tôi đã không nói vậy."}
+      ],
+      "common_mistakes": [
+        {"wrong": "I wish I can fly.", "right": "I wish I could fly.", "note_vi": "Wish lùi một thì: can -> could."}
+      ],
+      "exercises": [
+        {"q": "I wish I ___ (know) the answer now.", "answer": "knew"},
+        {"q": "She wishes she ___ (study) harder last year.", "answer": "had studied"}
+      ]
+    },
+    {
+      "id": "g28", "level": "B2", "title_en": "Advanced passive and causative", "title_vi": "Bị động nâng cao và thể truyền khiến",
+      "explanation_vi": "Bị động với modal, hoàn thành, tiếp diễn. Causative: have/get + O + V3 (nhờ ai làm việc gì).",
+      "forms": ["S + modal + be + V3", "S + have/has been + V3", "have + O + V3"],
+      "examples": [
+        {"en": "The report must be finished today.", "vi": "Bản báo cáo phải được hoàn thành hôm nay."},
+        {"en": "I had my hair cut yesterday.", "vi": "Hôm qua tôi đi cắt tóc."}
+      ],
+      "common_mistakes": [
+        {"wrong": "I cut my hair yesterday. (ý: nhờ thợ cắt)", "right": "I had my hair cut yesterday.", "note_vi": "Dùng have + O + V3 khi người khác làm giúp."}
+      ],
+      "exercises": [
+        {"q": "The house ___ (paint) at the moment.", "answer": "is being painted"},
+        {"q": "She ___ her car ___ (repair) last week.", "answer": "had / repaired"}
+      ]
+    }
+  ]
+}
