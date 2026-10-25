@@ -448,7 +448,7 @@ final class NewsFetchService {
 
     private func fetchReturningItems(source: NewsSource, cachedETag: String?) async -> (SourceReport, [NewsItem]) {
         var request = URLRequest(url: URL(string: source.feedUrl)!)
-        request.setValue("Locklish/1.0 (iOS English-learning app; contact: dev@locklish.app)", forHTTPHeaderField: "User-Agent")
+        request.setValue("Locklish/1.0 (iOS English-learning app)", forHTTPHeaderField: "User-Agent")
         if let etag = cachedETag {
             request.setValue(etag, forHTTPHeaderField: "If-None-Match")
         }
