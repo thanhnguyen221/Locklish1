@@ -393,6 +393,7 @@ struct NewsListView: View {
                     ForEach(items.prefix(visibleCount)) { item in
                         NavigationLink(destination: NewsArticleView(item: item)) {
                             NewsArticleRow(item: item)
+                                .accessibilityIdentifier("news-article-row")
                         }
                         .buttonStyle(.plain)
                     }

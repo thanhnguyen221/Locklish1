@@ -21,7 +21,7 @@ An AI-powered English learning app for iOS, featuring intelligent vocabulary ext
 Experience the smart import, karaoke subtitles and bilingual news reading in action:
 
 <div align="center">
-<img src="AppStoreScreenshots/01-home.png" width="180" alt="Màn chủ"> <img src="AppStoreScreenshots/02-grammar-roadmap.png" width="180" alt="Ngữ pháp"> <img src="AppStoreScreenshots/04-news-feed.png" width="180" alt="Tin tức"> <img src="AppStoreScreenshots/05-article-bilingual.png" width="180" alt="Đọc song ngữ">
+<img src="AppStoreScreenshots/01-home.png" width="170" alt="Màn chủ"> <img src="AppStoreScreenshots/10-news-feed.png" width="170" alt="Tin tức"> <img src="AppStoreScreenshots/11-article-bilingual.png" width="170" alt="Đọc song ngữ"> <img src="AppStoreScreenshots/05-stats.png" width="170" alt="Thống kê SRS">
 </div>
 
 > **Coming Soon** — Demo video showcasing AI import, word-karaoke YouTube study, and speaking practice...
@@ -37,6 +37,23 @@ Experience the smart import, karaoke subtitles and bilingual news reading in act
 * **Speaking Practice (Speak & Check):** en-US speech recognition scores pronunciation word-by-word (filler removal, inflection tolerance) and **auto-stops when you've said enough** — results feed straight back into the SM-2 schedule.
 * **Grammar & IPA Curriculum:** CEFR A1–B2 roadmap timeline with per-phase progress, 28 full lessons (formulas, bilingual examples, common mistakes, multi-answer exercises) and a 44-sound IPA table with UK/US voice toggle.
 * **Ecosystem Extras:** Home-screen widget ("X từ cần ôn"), daily review reminder, learning streak 🔥, iCloud sync (SwiftData + CloudKit), CSV export, iPad/landscape two-column layouts, onboarding flow.
+
+---
+
+## 📸 Screenshots — Toàn bộ màn hình
+
+| | | |
+|:---:|:---:|:---:|
+| **Từ vựng** | **YouTube catalog** | **Trích xuất AI** |
+| <img src="AppStoreScreenshots/01-home.png" width="200"> | <img src="AppStoreScreenshots/02-youtube-catalog.png" width="200"> | <img src="AppStoreScreenshots/03-import.png" width="200"> |
+| **Chi tiết học phần** | **Thống kê SM-2** | **Luyện nói** |
+| <img src="AppStoreScreenshots/04-deck-detail.png" width="200"> | <img src="AppStoreScreenshots/05-stats.png" width="200"> | <img src="AppStoreScreenshots/06-speak.png" width="200"> |
+| **Lộ trình ngữ pháp** | **Bài học ngữ pháp** | **Bảng IPA** |
+| <img src="AppStoreScreenshots/07-grammar-roadmap.png" width="200"> | <img src="AppStoreScreenshots/08-grammar-lesson.png" width="200"> | <img src="AppStoreScreenshots/09-ipa.png" width="200"> |
+| **Bảng tin** | **Đọc song ngữ** | **Bản đồ học từ** |
+| <img src="AppStoreScreenshots/10-news-feed.png" width="200"> | <img src="AppStoreScreenshots/11-article-bilingual.png" width="200"> | <img src="AppStoreScreenshots/12-game-hub.png" width="200"> |
+| **Cài đặt** | | |
+| <img src="AppStoreScreenshots/13-settings.png" width="200"> | | |
 
 ---
 

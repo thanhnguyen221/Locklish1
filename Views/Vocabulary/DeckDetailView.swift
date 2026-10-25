@@ -58,6 +58,7 @@ struct DeckDetailView: View {
                 HStack(spacing: 10) {
                     NavigationLink(destination: DeckStatsView(deck: deck)) {
                         Image(systemName: "chart.bar.fill")
+                            .accessibilityLabel("Thống kê ôn tập")
                             .font(.system(size: 14, weight: .bold))
                             .foregroundStyle(AppTheme.primary)
                             .frame(width: 30, height: 30)
@@ -68,6 +69,7 @@ struct DeckDetailView: View {
                     // Export deck as CSV (importable into Anki / Excel / Quizlet)
                     ShareLink(item: deckCSVFile) {
                         Image(systemName: "square.and.arrow.up")
+                            .accessibilityLabel("Xuất CSV")
                             .font(.system(size: 14, weight: .bold))
                             .foregroundStyle(AppTheme.accent)
                             .frame(width: 30, height: 30)
